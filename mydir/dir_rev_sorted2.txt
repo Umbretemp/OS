@@ -1,0 +1,120 @@
+Mode                 LastWriteTime         Length Name                       
+da----         8/16/2024   9:46 PM                tracing                    
+d-r-s-         8/26/2025   9:42 PM                assembly                   
+d-r-s-         12/7/2019   4:31 AM                Media                      
+d-r-s-          7/7/2025  11:42 PM                Fonts                      
+d-r---         8/14/2025  11:10 PM                ImmersiveControlPanel      
+d-r---         7/11/2025   5:51 PM                PrintDialog                
+d-r---         12/7/2019   4:14 AM                Offline Web Pages          
+d-r---          9/2/2025  11:41 AM                Microsoft.NET              
+d---s-         12/7/2019   4:14 AM                Downloaded Program Files   
+d-----        12/16/2022   7:17 AM                SystemApps                 
+d-----        11/17/2024   1:10 AM                DiagTrack                  
+d-----        11/17/2023  12:47 AM                IME                        
+d-----        10/17/2023  10:39 PM                Registration               
+d-----        10/15/2024   7:07 PM                appcompat                  
+d-----        10/15/2023   1:42 PM                debug                      
+d-----         8/29/2025  10:35 AM                Minidump                   
+d-----         8/22/2025  11:14 PM                Logs                       
+d-----         8/16/2024   9:46 PM                twain_32                   
+d-----         8/15/2025   7:26 PM                SoftwareDistribution       
+d-----         8/14/2025  11:11 PM                SystemResources            
+d-----         8/14/2025  11:10 PM                en-US                      
+d-----         8/14/2025  11:10 PM                bcastdvr                   
+d-----         8/14/2024   4:37 PM                schemas                    
+d-----         8/14/2024   4:37 PM                Provisioning               
+d-----         7/29/2025   3:18 PM                Panther                    
+d-----         7/27/2020   6:44 PM                Setup                      
+d-----         7/27/2020   6:40 PM                ServiceProfiles            
+d-----         7/15/2024   3:22 AM                PolicyDefinitions          
+d-----         7/11/2025   5:51 PM                ShellExperiences           
+d-----         7/11/2025   5:51 PM                ShellComponents            
+d-----         7/11/2025   5:51 PM                servicing                  
+d-----         5/30/2025   5:07 AM                Tasks                      
+d-----         4/10/2024   8:04 AM                Boot                       
+d-----         12/7/2019   4:51 AM                OCR                        
+d-----         12/7/2019   4:50 AM                addins                     
+d-----         12/7/2019   4:49 AM                Help                       
+d-----         12/7/2019   4:49 AM                DigitalLocker              
+d-----         12/7/2019   4:31 AM                Web                        
+d-----         12/7/2019   4:31 AM                SKB                        
+d-----         12/7/2019   4:31 AM                security                   
+d-----         12/7/2019   4:31 AM                Resources                  
+d-----         12/7/2019   4:31 AM                PLA                        
+d-----         12/7/2019   4:31 AM                IdentityCRL                
+d-----         12/7/2019   4:31 AM                Globalization              
+d-----         12/7/2019   4:31 AM                diagnostics                
+d-----         12/7/2019   4:14 AM                WaaS                       
+d-----         12/7/2019   4:14 AM                Vss                        
+d-----         12/7/2019   4:14 AM                TAPI                       
+d-----         12/7/2019   4:14 AM                System                     
+d-----         12/7/2019   4:14 AM                Speech_OneCore             
+d-----         12/7/2019   4:14 AM                Speech                     
+d-----         12/7/2019   4:14 AM                SchCache                   
+d-----         12/7/2019   4:14 AM                rescache                   
+d-----         12/7/2019   4:14 AM                Performance                
+d-----         12/7/2019   4:14 AM                ModemLogs                  
+d-----         12/7/2019   4:14 AM                Migration                  
+d-----         12/7/2019   4:14 AM                L2Schemas                  
+d-----         12/7/2019   4:14 AM                InputMethod                
+d-----         12/7/2019   4:14 AM                GameBarPresenceWriter      
+d-----         12/7/2019   4:14 AM                Cursors                    
+d-----         12/7/2019   4:14 AM                Containers                 
+d-----         12/7/2019   4:14 AM                Branding                   
+d-----         1/17/2025  12:16 PM                apppatch                   
+d-----          9/2/2025  12:05 PM                Temp                       
+d-----          9/2/2025  11:58 AM                AppReadiness               
+d-----          9/2/2025  11:56 AM                SystemTemp                 
+d-----          9/2/2025  11:56 AM                Prefetch                   
+d-----          9/2/2025  11:55 AM                WinSxS                     
+d-----          9/2/2025  11:55 AM                System32                   
+d-----          9/2/2025  11:55 AM                ServiceState               
+d-----          9/2/2025  11:54 AM                SysWOW64                   
+d-----          9/2/2025  11:54 AM                INF                        
+d-----          9/2/2025  11:54 AM                CbsTemp                    
+d-----          7/7/2025   8:22 PM                SolidWorks                 
+d-----          7/7/2025   8:11 PM                LiveKernelReports          
+d-----          7/4/2020   3:52 PM                TextInput                  
+d-----          2/1/2025  11:47 AM                InboxApps                  
+    Directory: C:\Windows
+-a--s-          9/2/2025  11:57 AM          67584 bootstat.dat               
+-a----        12/30/2024   3:29 AM         237936 RtkBtManServ.exe           
+-a----        12/30/2024   3:29 AM          97721 rtl8852c_mp_chip_new.dat   
+-a----         8/31/2025  10:19 PM      134222904 392667600.dat              
+-a----         8/30/2025   8:18 PM            720 setupact.log               
+-a----         8/29/2025  10:35 AM     2694175608 MEMORY.DMP                 
+-a----         8/24/2025   7:48 PM         684220 PFRO.log                   
+-a----         8/15/2025   7:25 PM         177739 DirectX.log                
+-a----         8/14/2025   9:26 PM        6092176 explorer.exe               
+-a----         7/27/2020   6:47 PM           7623 diagwrn.xml                
+-a----         7/27/2020   6:47 PM           7623 diagerr.xml                
+-a----         7/27/2020   6:46 PM            762 comsetup.log               
+-a----         7/27/2020   6:45 PM              0 setuperr.log               
+-a----         7/11/2025   5:48 PM         164352 splwow64.exe               
+-a----         5/30/2025   4:54 AM            215 driverdvd.log              
+-a----         5/24/2025   7:04 PM        1008128 DPINST.LOG                 
+-a----         5/15/2024   2:07 PM         370176 regedit.exe                
+-a----         3/19/2019  12:49 AM            219 system.ini                 
+-a----         3/19/2019  12:49 AM             92 win.ini                    
+-a----         2/12/2025   2:26 AM          93696 bfsvc.exe                  
+-a----         12/7/2019   4:52 AM         316640 WMSysPr9.prx               
+-a----         12/7/2019   4:10 AM          29857 Core.xml                   
+-a----         12/7/2019   4:10 AM          11776 winhlp32.exe               
+-a----         12/7/2019   4:09 AM          18432 hh.exe                     
+-a----         12/7/2019   4:08 AM          43131 mib.bin                    
+-a----         12/6/2019   4:29 PM          11264 write.exe                  
+-a----          9/2/2025  11:58 AM              1 vgkbootstatus.dat          
+-a----          9/2/2025  11:55 AM            276 WindowsUpdate.log          
+-a----          7/7/2025   7:54 PM              0 eDrawingOfficeAutomator.INI
+-a----          6/2/2025   2:23 AM          10773 Info.xml                   
+-a----          5/3/2025   1:00 AM           3692 DtcInstall.log             
+-a----          5/2/2025  11:06 PM        1065984 HelpPane.exe               
+-a----          5/2/2025  11:06 PM         200704 notepad.exe                
+-a----          5/2/2025  11:06 PM          76800 twain_32.dll               
+----                 -------------         ------ ----                       
+
+
+
+
+
+
