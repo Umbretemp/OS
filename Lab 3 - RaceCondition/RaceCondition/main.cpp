@@ -28,6 +28,7 @@ struct ThreadStruct
 	///////////////////////////////////////////////////////////////////////////////////
 	// TODO: Add any extra variables needed by the threads here
 	///////////////////////////////////////////////////////////////////////////////////	
+	int runType;
 
 };
 
@@ -90,7 +91,7 @@ int main(int argc, char** argv)
 	///////////////////////////////////////////////////////////////////////////////////	
 
 
-	if (argc != 4)
+	if (argc != 5)
 	{
 		fprintf(stderr, "Error: missing or incorrect command line arguments\n\n"); 
 		fprintf(stderr, "Usage: RaceCondition threadCount sharedStringLength numberOfStringsToGenerate runType\n\n");
@@ -107,7 +108,7 @@ int main(int argc, char** argv)
 	threadCount = atoi(argv[1]);
 	sharedStringLength = atoi(argv[2]);
 	numberOfStringsToGenerate = atoi(argv[3]);
-	//
+	runType = atoi(argv[4]);
 
 	if(threadCount < 0 || sharedStringLength < 0 || numberOfStringsToGenerate < 0 || runType < 0)
 	{
