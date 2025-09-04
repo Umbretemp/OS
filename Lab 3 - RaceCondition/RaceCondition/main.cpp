@@ -36,7 +36,6 @@ struct ThreadStruct
 	std::mutex* mtx;
 	std::condition_variable* condV;
 	int* turn;
-
 };
 
 ///////////////////////////////////////////////////////////////////////////////////////////
@@ -161,6 +160,11 @@ int main(int argc, char** argv)
 	sharedString = new char[sharedStringLength + 1];
 	memset(sharedString, 0, sharedStringLength + 1);
 	perThreadData = new ThreadStruct[threadCount];
+
+	// concurency variables
+	std::mutex mtx;
+	std::condition_variable condV;
+	int turn = 0;
 	
 	///////////////////////////////////////////////////////////////////////////////////
 	// TODO:: You will need a container to store the thread class objects. It is up to you
@@ -180,6 +184,13 @@ int main(int argc, char** argv)
 		// TODO:: Setup any additional variables in perThreadData and start (create) the threads.
 		//			MUST be done in this for loop.
 		///////////////////////////////////////////////////////////////////////////////////
+		perThreadData[i].runType = runType;
+		perThreadData[i].mtx = &mtx;
+		perThreadData[i].condV = &condV;
+		perThreadData[i].turn = &turn;
+		
+		// Add thread obj to threads vector obj
+		threads.emplace_back(ThreadEntryPoint,  &perThreadData[i]);
 	}
 
 
