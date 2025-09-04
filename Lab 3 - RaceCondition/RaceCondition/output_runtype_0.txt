@@ -1,0 +1,204 @@
+Running Test for runType 0... 
+Command: .\x64\Debug\RaceCondition.exe 3 30 2 0 
+Iterations: 50 
+ 
+--- Iteration 1 --- 
+'.\x64\Debug\RaceCondition.exe' is not recognized as an internal or external command,
+operable program or batch file.
+ 
+--- Iteration 2 --- 
+'.\x64\Debug\RaceCondition.exe' is not recognized as an internal or external command,
+operable program or batch file.
+ 
+--- Iteration 3 --- 
+'.\x64\Debug\RaceCondition.exe' is not recognized as an internal or external command,
+operable program or batch file.
+ 
+--- Iteration 4 --- 
+'.\x64\Debug\RaceCondition.exe' is not recognized as an internal or external command,
+operable program or batch file.
+ 
+--- Iteration 5 --- 
+'.\x64\Debug\RaceCondition.exe' is not recognized as an internal or external command,
+operable program or batch file.
+ 
+--- Iteration 6 --- 
+'.\x64\Debug\RaceCondition.exe' is not recognized as an internal or external command,
+operable program or batch file.
+ 
+--- Iteration 7 --- 
+'.\x64\Debug\RaceCondition.exe' is not recognized as an internal or external command,
+operable program or batch file.
+ 
+--- Iteration 8 --- 
+'.\x64\Debug\RaceCondition.exe' is not recognized as an internal or external command,
+operable program or batch file.
+ 
+--- Iteration 9 --- 
+'.\x64\Debug\RaceCondition.exe' is not recognized as an internal or external command,
+operable program or batch file.
+ 
+--- Iteration 10 --- 
+'.\x64\Debug\RaceCondition.exe' is not recognized as an internal or external command,
+operable program or batch file.
+ 
+--- Iteration 11 --- 
+'.\x64\Debug\RaceCondition.exe' is not recognized as an internal or external command,
+operable program or batch file.
+ 
+--- Iteration 12 --- 
+'.\x64\Debug\RaceCondition.exe' is not recognized as an internal or external command,
+operable program or batch file.
+ 
+--- Iteration 13 --- 
+'.\x64\Debug\RaceCondition.exe' is not recognized as an internal or external command,
+operable program or batch file.
+ 
+--- Iteration 14 --- 
+'.\x64\Debug\RaceCondition.exe' is not recognized as an internal or external command,
+operable program or batch file.
+ 
+--- Iteration 15 --- 
+'.\x64\Debug\RaceCondition.exe' is not recognized as an internal or external command,
+operable program or batch file.
+ 
+--- Iteration 16 --- 
+'.\x64\Debug\RaceCondition.exe' is not recognized as an internal or external command,
+operable program or batch file.
+ 
+--- Iteration 17 --- 
+'.\x64\Debug\RaceCondition.exe' is not recognized as an internal or external command,
+operable program or batch file.
+ 
+--- Iteration 18 --- 
+'.\x64\Debug\RaceCondition.exe' is not recognized as an internal or external command,
+operable program or batch file.
+ 
+--- Iteration 19 --- 
+'.\x64\Debug\RaceCondition.exe' is not recognized as an internal or external command,
+operable program or batch file.
+ 
+--- Iteration 20 --- 
+'.\x64\Debug\RaceCondition.exe' is not recognized as an internal or external command,
+operable program or batch file.
+ 
+--- Iteration 21 --- 
+'.\x64\Debug\RaceCondition.exe' is not recognized as an internal or external command,
+operable program or batch file.
+ 
+--- Iteration 22 --- 
+'.\x64\Debug\RaceCondition.exe' is not recognized as an internal or external command,
+operable program or batch file.
+ 
+--- Iteration 23 --- 
+'.\x64\Debug\RaceCondition.exe' is not recognized as an internal or external command,
+operable program or batch file.
+ 
+--- Iteration 24 --- 
+'.\x64\Debug\RaceCondition.exe' is not recognized as an internal or external command,
+operable program or batch file.
+ 
+--- Iteration 25 --- 
+'.\x64\Debug\RaceCondition.exe' is not recognized as an internal or external command,
+operable program or batch file.
+ 
+--- Iteration 26 --- 
+'.\x64\Debug\RaceCondition.exe' is not recognized as an internal or external command,
+operable program or batch file.
+ 
+--- Iteration 27 --- 
+'.\x64\Debug\RaceCondition.exe' is not recognized as an internal or external command,
+operable program or batch file.
+ 
+--- Iteration 28 --- 
+'.\x64\Debug\RaceCondition.exe' is not recognized as an internal or external command,
+operable program or batch file.
+ 
+--- Iteration 29 --- 
+'.\x64\Debug\RaceCondition.exe' is not recognized as an internal or external command,
+operable program or batch file.
+ 
+--- Iteration 30 --- 
+'.\x64\Debug\RaceCondition.exe' is not recognized as an internal or external command,
+operable program or batch file.
+ 
+--- Iteration 31 --- 
+'.\x64\Debug\RaceCondition.exe' is not recognized as an internal or external command,
+operable program or batch file.
+ 
+--- Iteration 32 --- 
+'.\x64\Debug\RaceCondition.exe' is not recognized as an internal or external command,
+operable program or batch file.
+ 
+--- Iteration 33 --- 
+'.\x64\Debug\RaceCondition.exe' is not recognized as an internal or external command,
+operable program or batch file.
+ 
+--- Iteration 34 --- 
+'.\x64\Debug\RaceCondition.exe' is not recognized as an internal or external command,
+operable program or batch file.
+ 
+--- Iteration 35 --- 
+'.\x64\Debug\RaceCondition.exe' is not recognized as an internal or external command,
+operable program or batch file.
+ 
+--- Iteration 36 --- 
+'.\x64\Debug\RaceCondition.exe' is not recognized as an internal or external command,
+operable program or batch file.
+ 
+--- Iteration 37 --- 
+'.\x64\Debug\RaceCondition.exe' is not recognized as an internal or external command,
+operable program or batch file.
+ 
+--- Iteration 38 --- 
+'.\x64\Debug\RaceCondition.exe' is not recognized as an internal or external command,
+operable program or batch file.
+ 
+--- Iteration 39 --- 
+'.\x64\Debug\RaceCondition.exe' is not recognized as an internal or external command,
+operable program or batch file.
+ 
+--- Iteration 40 --- 
+'.\x64\Debug\RaceCondition.exe' is not recognized as an internal or external command,
+operable program or batch file.
+ 
+--- Iteration 41 --- 
+'.\x64\Debug\RaceCondition.exe' is not recognized as an internal or external command,
+operable program or batch file.
+ 
+--- Iteration 42 --- 
+'.\x64\Debug\RaceCondition.exe' is not recognized as an internal or external command,
+operable program or batch file.
+ 
+--- Iteration 43 --- 
+'.\x64\Debug\RaceCondition.exe' is not recognized as an internal or external command,
+operable program or batch file.
+ 
+--- Iteration 44 --- 
+'.\x64\Debug\RaceCondition.exe' is not recognized as an internal or external command,
+operable program or batch file.
+ 
+--- Iteration 45 --- 
+'.\x64\Debug\RaceCondition.exe' is not recognized as an internal or external command,
+operable program or batch file.
+ 
+--- Iteration 46 --- 
+'.\x64\Debug\RaceCondition.exe' is not recognized as an internal or external command,
+operable program or batch file.
+ 
+--- Iteration 47 --- 
+'.\x64\Debug\RaceCondition.exe' is not recognized as an internal or external command,
+operable program or batch file.
+ 
+--- Iteration 48 --- 
+'.\x64\Debug\RaceCondition.exe' is not recognized as an internal or external command,
+operable program or batch file.
+ 
+--- Iteration 49 --- 
+'.\x64\Debug\RaceCondition.exe' is not recognized as an internal or external command,
+operable program or batch file.
+ 
+--- Iteration 50 --- 
+'.\x64\Debug\RaceCondition.exe' is not recognized as an internal or external command,
+operable program or batch file.
+ 
