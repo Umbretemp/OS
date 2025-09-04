@@ -1,204 +1,504 @@
 Running Test for runType 0... 
-Command: .\x64\Debug\RaceCondition.exe 3 30 2 0 
+Command: ..\x64\Debug\RaceCondition.exe 3 30 2 0 
 Iterations: 50 
  
 --- Iteration 1 --- 
-'.\x64\Debug\RaceCondition.exe' is not recognized as an internal or external command,
-operable program or batch file.
+3 thread(s), string sharedStringLength 30, 2 iterations, 0 runType
+Thread 1: ABAABCABBBABAABABABABACABABABA
+Thread 0: ABAABCABBBABAABABABABACABABABC
+Thread 2: ABAABCABBBABAABABABABACABABABC
+Thread 0: ABABBCBACAAAAACAACBBABBAABAAAA
+Thread 2: ABABBCBACAAAAACAACBBABBAABAAAC
+Thread 1: ABABBCBACAAAAACAACBBABBAABAAAB
+Press enter to continue
  
 --- Iteration 2 --- 
-'.\x64\Debug\RaceCondition.exe' is not recognized as an internal or external command,
-operable program or batch file.
+3 thread(s), string sharedStringLength 30, 2 iterations, 0 runType
+Thread 1: CBABABABACABBCCCBBCBCBAABABACA
+Thread 2: CBABABABACABBCCCBBCBCBAABABACA
+Thread 0: CBABABABACABBCCCBBCBCBAABABACA
+Thread 0: AABABCBACBABABABABABABCAABABAA
+Thread 2: AABABCBACBABABABABABABCAABABAC
+Thread 1: AABABCBACBABABABABABABCAABABAC
+Press enter to continue
  
 --- Iteration 3 --- 
-'.\x64\Debug\RaceCondition.exe' is not recognized as an internal or external command,
-operable program or batch file.
+3 thread(s), string sharedStringLength 30, 2 iterations, 0 runType
+Thread 0: BABCABABBACABCCBCABCCABCBACABC
+Thread 1: BABCABABBACABCCBCABCCABCBACABC
+Thread 2: BABCABABBACABCCBCABCCABCBACABC
+Thread 2: ABCAACACABCABBACAACAAABBAABAAC
+Thread 0: ABCAACACABCABBACAACAAABBAABAAA
+Thread 1: ABCAACACABCABBACAACAAABBAABAAB
+Press enter to continue
  
 --- Iteration 4 --- 
-'.\x64\Debug\RaceCondition.exe' is not recognized as an internal or external command,
-operable program or batch file.
+3 thread(s), string sharedStringLength 30, 2 iterations, 0 runType
+Thread 2: ACCBCABCBABABABBACCBBCABBAACCB
+Thread 1: ACCBCABCBABABABBACCBBCABBAACCB
+Thread 0: ACCBCABCBABABABBACCBBCABBAACCA
+Thread 0: ABABCCBABABABABCBAABBCBABCCBBB
+Thread 1: ABABCCBABABABABCBAABBCBABCCBBB
+Thread 2: ABABCCBABABABABCBAABBCBABCCBBB
+Press enter to continue
  
 --- Iteration 5 --- 
-'.\x64\Debug\RaceCondition.exe' is not recognized as an internal or external command,
-operable program or batch file.
+3 thread(s), string sharedStringLength 30, 2 iterations, 0 runType
+Thread 2: CBCBAABAABCBCBCBCBCBABABABABCC
+Thread 0: CBCBAABAABCBCBCBCBCBABABABABCA
+Thread 1: CBCBAABAABCBCBCBCBCBABABABABCB
+Thread 1: CBABABACAAACABCABABABABBBBBABB
+Thread 0: CBABABACAAACABCABABABABBBBBABA
+Thread 2: CBABABACAAACABCABABABABBBBBABC
+Press enter to continue
  
 --- Iteration 6 --- 
-'.\x64\Debug\RaceCondition.exe' is not recognized as an internal or external command,
-operable program or batch file.
+3 thread(s), string sharedStringLength 30, 2 iterations, 0 runType
+Thread 1: AAACAABAAABAAACACBCBAABABABABA
+Thread 0: AAACAABAAABAAACACBCBAABABABABC
+Thread 2: AAACAABAAABAAACACBCBAABABABABC
+Thread 2: ABABABBACBCBBABABBACBCBABABABC
+Thread 1: ABABABBACBCBBABABBACBCBABABABB
+Thread 0: ABABABBACBCBBABABBACBCBABABABA
+Press enter to continue
  
 --- Iteration 7 --- 
-'.\x64\Debug\RaceCondition.exe' is not recognized as an internal or external command,
-operable program or batch file.
+3 thread(s), string sharedStringLength 30, 2 iterations, 0 runType
+Thread 0: BCAAACBABACACCABCABBBCACBBCBAC
+Thread 2: BCAAACBABACACCABCABBBCACBBCBAB
+Thread 1: BCAAACBABACACCABCABBBCACBBCBAB
+Thread 2: BAAABCBABABABABCABCBCBAAAABABC
+Thread 1: BAAABCBABABABABCABCBCBAAAABABB
+Thread 0: BAAABCBABABABABCABCBCBAAAABABA
+Press enter to continue
  
 --- Iteration 8 --- 
-'.\x64\Debug\RaceCondition.exe' is not recognized as an internal or external command,
-operable program or batch file.
+3 thread(s), string sharedStringLength 30, 2 iterations, 0 runType
+Thread 2: CCCCCCCCBCBACABABAABAABABABABC
+Thread 1: CCCCCCCCBCBACABABAABAABABABABB
+Thread 0: CCCCCCCCBCBACABABAABAABABABABA
+Thread 2: CABCBABABCBABACBABACABABABABAC
+Thread 1: CABCBABABCBABACBABACABABABABAA
+Thread 0: CABCBABABCBABACBABACABABABABAA
+Press enter to continue
  
 --- Iteration 9 --- 
-'.\x64\Debug\RaceCondition.exe' is not recognized as an internal or external command,
-operable program or batch file.
+3 thread(s), string sharedStringLength 30, 2 iterations, 0 runType
+Thread 2: ABACCACBAACCAABAAAACCBCBBBABAC
+Thread 0: ABACCACBAACCAABAAAACCBCBBBABAA
+Thread 1: ABACCACBAACCAABAAAACCBCBBBABAB
+Thread 2: ABABABABABBBCAAACBAABABAACBABC
+Thread 1: ABABABABABBBCAAACBAABABAACBABB
+Thread 0: ABABABABABBBCAAACBAABABAACBABA
+Press enter to continue
  
 --- Iteration 10 --- 
-'.\x64\Debug\RaceCondition.exe' is not recognized as an internal or external command,
-operable program or batch file.
+3 thread(s), string sharedStringLength 30, 2 iterations, 0 runType
+Thread 0: BABABBCABAABABAABCABACABACABAA
+Thread 1: BABABBCABAABABAABCABACABACABAB
+Thread 2: BABABBCABAABABAABCABACABACABAC
+Thread 1: ABABAABACBCBACAABABABABAABCBAB
+Thread 0: ABABAABACBCBACAABABABABAABCBAA
+Thread 2: ABABAABACBCBACAABABABABAABCBAC
+Press enter to continue
  
 --- Iteration 11 --- 
-'.\x64\Debug\RaceCondition.exe' is not recognized as an internal or external command,
-operable program or batch file.
+3 thread(s), string sharedStringLength 30, 2 iterations, 0 runType
+Thread 2: BCBCCAACAACCCCCACCCCBCBBBBACAC
+Thread 0: BCBCCAACAACCCCCACCCCBCBBBBACAA
+Thread 1: BCBCCAACAACCCCCACCCCBCBBBBACAB
+Thread 2: BACCCCBCACBAABACCCABABABCBABAC
+Thread 0: BACCCCBCACBAABACCCABABABCBABAA
+Thread 1: BACCCCBCACBAABACCCABABABCBABAB
+Press enter to continue
  
 --- Iteration 12 --- 
-'.\x64\Debug\RaceCondition.exe' is not recognized as an internal or external command,
-operable program or batch file.
+3 thread(s), string sharedStringLength 30, 2 iterations, 0 runType
+Thread 1: BBBBBBCAAAAABBBBBBBBBBBACBABBA
+Thread 0: BBBBBBCAAAAABBBBBBBBBBBACBABBA
+Thread 2: BBBBBBCAAAAABBBBBBBBBBBACBABBC
+Thread 1: CCAABBBBBABAABBBBBBBBAABAABBBB
+Thread 2: CCAABBBBBABAABBBBBBBBAABAABBBA
+Thread 0: CCAABBBBBABAABBBBBBBBAABAABBBA
+Press enter to continue
  
 --- Iteration 13 --- 
-'.\x64\Debug\RaceCondition.exe' is not recognized as an internal or external command,
-operable program or batch file.
+3 thread(s), string sharedStringLength 30, 2 iterations, 0 runType
+Thread 2: CBCBCAAACACAAABCBCABABBBACBACA
+Thread 1: CBCBCAAACACAAABCBCABABBBACBACA
+Thread 0: CBCBCAAACACAAABCBCABABBBACBACA
+Thread 1: BBACCBABABACBCACABCABCAACABCAB
+Thread 0: BBACCBABABACBCACABCABCAACABCAA
+Thread 2: BBACCBABABACBCACABCABCAACABCAC
+Press enter to continue
  
 --- Iteration 14 --- 
-'.\x64\Debug\RaceCondition.exe' is not recognized as an internal or external command,
-operable program or batch file.
+3 thread(s), string sharedStringLength 30, 2 iterations, 0 runType
+Thread 2: ACAABABAAAABCABBBBCBBABABCBCAC
+Thread 0: ACAABABAAAABCABBBBCBBABABCBCAA
+Thread 1: ACAABABAAAABCABBBBCBBABABCBCAB
+Thread 2: BABCBCBABACBBACACCABAABABABABB
+Thread 0: BABCBCBABACBBACACCABAABABABABB
+Thread 1: BABCBCBABACBBACACCABAABABABABB
+Press enter to continue
  
 --- Iteration 15 --- 
-'.\x64\Debug\RaceCondition.exe' is not recognized as an internal or external command,
-operable program or batch file.
+3 thread(s), string sharedStringLength 30, 2 iterations, 0 runType
+Thread 2: BBACCABABCABABABCABACABACBBBBC
+Thread 1: BBACCABABCABABABCABACABACBBBBB
+Thread 0: BBACCABABCABABABCABACABACBBBBA
+Thread 1: ABABBACABAABABABABCACABCBBABAA
+Thread 0: ABABBACABAABABABABCACABCBBABAC
+Thread 2: ABABBACABAABABABABCACABCBBABAC
+Press enter to continue
  
 --- Iteration 16 --- 
-'.\x64\Debug\RaceCondition.exe' is not recognized as an internal or external command,
-operable program or batch file.
+3 thread(s), string sharedStringLength 30, 2 iterations, 0 runType
+Thread 2: BABABABABABABABABCACABCACBBBAC
+Thread 0: BABABABABABABABABCACABCACBBBAB
+Thread 1: BABABABABABABABABCACABCACBBBAB
+Thread 0: ABACABABBABABABACABABABBCAACCA
+Thread 1: ABACABABBABABABACABABABBCAACCC
+Thread 2: ABACABABBABABABACABABABBCAACCC
+Press enter to continue
  
 --- Iteration 17 --- 
-'.\x64\Debug\RaceCondition.exe' is not recognized as an internal or external command,
-operable program or batch file.
+3 thread(s), string sharedStringLength 30, 2 iterations, 0 runType
+Thread 2: AABCBABABABBCBABABABABABABABCC
+Thread 1: AABCBABABABBCBABABABABABABABCB
+Thread 0: AABCBABABABBCBABABABABABABABCA
+Thread 0: BAACBABABAABAAAAAABBCCBCBAAAAC
+Thread 1: BAACBABABAABAAAAAABBCCBCBAAAAC
+Thread 2: BAACBABABAABAAAAAABBCCBCBAAAAC
+Press enter to continue
  
 --- Iteration 18 --- 
-'.\x64\Debug\RaceCondition.exe' is not recognized as an internal or external command,
-operable program or batch file.
+3 thread(s), string sharedStringLength 30, 2 iterations, 0 runType
+Thread 2: CABACABAABCCCBABABACCCCCCCCABC
+Thread 1: CABACABAABCCCBABABACCCCCCCCABA
+Thread 0: CABACABAABCCCBABABACCCCCCCCABA
+Thread 2: ABAACCABABCCCACAABACBBABABABBC
+Thread 0: ABAACCABABCCCACAABACBBABABABBB
+Thread 1: ABAACCABABCCCACAABACBBABABABBB
+Press enter to continue
  
 --- Iteration 19 --- 
-'.\x64\Debug\RaceCondition.exe' is not recognized as an internal or external command,
-operable program or batch file.
+3 thread(s), string sharedStringLength 30, 2 iterations, 0 runType
+Thread 2: BAAABABABABCBABABABCBCBCACABAC
+Thread 0: BAAABABABABCBABABABCBCBCACABAA
+Thread 1: BAAABABABABCBABABABCBCBCACABAB
+Thread 2: BAABCABAABBABAAACABBBCBCAACACA
+Thread 0: BAABCABAABBABAAACABBBCBCAACACB
+Thread 1: BAABCABAABBABAAACABBBCBCAACACB
+Press enter to continue
  
 --- Iteration 20 --- 
-'.\x64\Debug\RaceCondition.exe' is not recognized as an internal or external command,
-operable program or batch file.
+3 thread(s), string sharedStringLength 30, 2 iterations, 0 runType
+Thread 1: BBABABABCBCBACABABABABAACCBAAB
+Thread 2: BBABABABCBCBACABABABABAACCBAAC
+Thread 0: BBABABABCBCBACABABABABAACCBAAA
+Thread 2: ACCAACCABBCBABCAABACABCABABAAC
+Thread 0: ACCAACCABBCBABCAABACABCABABAAA
+Thread 1: ACCAACCABBCBABCAABACABCABABAAB
+Press enter to continue
  
 --- Iteration 21 --- 
-'.\x64\Debug\RaceCondition.exe' is not recognized as an internal or external command,
-operable program or batch file.
+3 thread(s), string sharedStringLength 30, 2 iterations, 0 runType
+Thread 1: AABABBCCCCBABABABBBBBCBCABAACC
+Thread 2: AABABBCCCCBABABABBBBBCBCABAACA
+Thread 0: AABABBCCCCBABABABBBBBCBCABAACA
+Thread 2: AABACABABABBABAABCBBBAABABACBC
+Thread 0: AABACABABABBABAABCBBBAABABACBA
+Thread 1: AABACABABABBABAABCBBBAABABACBA
+Press enter to continue
  
 --- Iteration 22 --- 
-'.\x64\Debug\RaceCondition.exe' is not recognized as an internal or external command,
-operable program or batch file.
+3 thread(s), string sharedStringLength 30, 2 iterations, 0 runType
+Thread 2: CBCCBBACBBCCCAABABABBABABABABC
+Thread 1: CBCCBBACBBCCCAABABABBABABABABB
+Thread 0: CBCCBBACBBCCCAABABABBABABABABA
+Thread 2: AACABABBABCCABAACBAAACBABCBABC
+Thread 1: AACABABBABCCABAACBAAACBABCBABB
+Thread 0: AACABABBABCCABAACBAAACBABCBABA
+Press enter to continue
  
 --- Iteration 23 --- 
-'.\x64\Debug\RaceCondition.exe' is not recognized as an internal or external command,
-operable program or batch file.
+3 thread(s), string sharedStringLength 30, 2 iterations, 0 runType
+Thread 2: CCACABCBBABCBABAABABBABABABCBC
+Thread 1: CCACABCBBABCBABAABABBABABABCBA
+Thread 0: CCACABCBBABCBABAABABBABABABCBA
+Thread 0: ACABABABBCCCBABACABCBCABBABABC
+Thread 2: ACABABABBCCCBABACABCBCABBABABB
+Thread 1: ACABABABBCCCBABACABCBCABBABABB
+Press enter to continue
  
 --- Iteration 24 --- 
-'.\x64\Debug\RaceCondition.exe' is not recognized as an internal or external command,
-operable program or batch file.
+3 thread(s), string sharedStringLength 30, 2 iterations, 0 runType
+Thread 1: AAAABABABCABABABABABABACCCCACB
+Thread 2: AAAABABABCABABABABABABACCCCACC
+Thread 0: AAAABABABCABABABABABABACCCCACA
+Thread 0: ABABABABAABBBABABABCBCABBAACCB
+Thread 1: ABABABABAABBBABABABCBCABBAACCB
+Thread 2: ABABABABAABBBABABABCBCABBAACCB
+Press enter to continue
  
 --- Iteration 25 --- 
-'.\x64\Debug\RaceCondition.exe' is not recognized as an internal or external command,
-operable program or batch file.
+3 thread(s), string sharedStringLength 30, 2 iterations, 0 runType
+Thread 1: CABAACABCBABABABABABCBABABBAAC
+Thread 2: CABAACABCBABABABABABCBABABBAAC
+Thread 0: CABAACABCBABABABABABCBABABBAAA
+Thread 2: AABABABABCBABABABABABABABACABB
+Thread 1: AABABABABCBABABABABABABABACABB
+Thread 0: AABABABABCBABABABABABABABACABA
+Press enter to continue
  
 --- Iteration 26 --- 
-'.\x64\Debug\RaceCondition.exe' is not recognized as an internal or external command,
-operable program or batch file.
+3 thread(s), string sharedStringLength 30, 2 iterations, 0 runType
+Thread 1: ACBCCCACCCBACBABCBBCACABACAABC
+Thread 2: ACBCCCACCCBACBABCBBCACABACAABA
+Thread 0: ACBCCCACCCBACBABCBBCACABACAABA
+Thread 1: ABABAABABCBACAABACABCBCBCABBAB
+Thread 0: ABABAABABCBACAABACABCBCBCABBAC
+Thread 2: ABABAABABCBACAABACABCBCBCABBAC
+Press enter to continue
  
 --- Iteration 27 --- 
-'.\x64\Debug\RaceCondition.exe' is not recognized as an internal or external command,
-operable program or batch file.
+3 thread(s), string sharedStringLength 30, 2 iterations, 0 runType
+Thread 2: BBBBBBBBBBBBABBBACCACAABCCAACA
+Thread 1: BBBBBBBBBBBBABBBACCACAABCCAACB
+Thread 0: BBBBBBBBBBBBABBBACCACAABCCAACB
+Thread 2: ABBBBBBBABBBBABBCBBBBBABABAABC
+Thread 0: ABBBBBBBABBBBABBCBBBBBABABAABA
+Thread 1: ABBBBBBBABBBBABBCBBBBBABABAABB
+Press enter to continue
  
 --- Iteration 28 --- 
-'.\x64\Debug\RaceCondition.exe' is not recognized as an internal or external command,
-operable program or batch file.
+3 thread(s), string sharedStringLength 30, 2 iterations, 0 runType
+Thread 2: CCABABABBBCBAACBABCBBACABABABC
+Thread 1: CCABABABBBCBAACBABCBBACABABABB
+Thread 0: CCABABABBBCBAACBABCBBACABABABA
+Thread 2: BCBABABACCBCCABABCCABAAACABABC
+Thread 1: BCBABABACCBCCABABCCABAAACABABB
+Thread 0: BCBABABACCBCCABABCCABAAACABABA
+Press enter to continue
  
 --- Iteration 29 --- 
-'.\x64\Debug\RaceCondition.exe' is not recognized as an internal or external command,
-operable program or batch file.
+3 thread(s), string sharedStringLength 30, 2 iterations, 0 runType
+Thread 2: AAABABABCACBAACBCABABBABAABABC
+Thread 1: AAABABABCACBAACBCABABBABAABABA
+Thread 0: AAABABABCACBAACBCABABBABAABABA
+Thread 2: CABABABABABACCABABABABABAACABC
+Thread 1: CABABABABABACCABABABABABAACABB
+Thread 0: CABABABABABACCABABABABABAACABA
+Press enter to continue
  
 --- Iteration 30 --- 
-'.\x64\Debug\RaceCondition.exe' is not recognized as an internal or external command,
-operable program or batch file.
+3 thread(s), string sharedStringLength 30, 2 iterations, 0 runType
+Thread 2: ABABAABBACCCACBACBCBABBCBABABB
+Thread 1: ABABAABBACCCACBACBCBABBCBABABA
+Thread 0: ABABAABBACCCACBACBCBABBCBABABA
+Thread 2: ABABABBCBCCCABABABABACABABABAC
+Thread 0: ABABABBCBCCCABABABABACABABABAA
+Thread 1: ABABABBCBCCCABABABABACABABABAB
+Press enter to continue
  
 --- Iteration 31 --- 
-'.\x64\Debug\RaceCondition.exe' is not recognized as an internal or external command,
-operable program or batch file.
+3 thread(s), string sharedStringLength 30, 2 iterations, 0 runType
+Thread 2: ACACBCABAACABABABABAAAAAAAABAC
+Thread 0: ACACBCABAACABABABABAAAAAAAABAA
+Thread 1: ACACBCABAACABABABABAAAAAAAABAB
+Thread 2: BBCBACBABCBABCABABCBABABABAABA
+Thread 0: BBCBACBABCBABCABABCBABABABAABA
+Thread 1: BBCBACBABCBABCABABCBABABABAABA
+Press enter to continue
  
 --- Iteration 32 --- 
-'.\x64\Debug\RaceCondition.exe' is not recognized as an internal or external command,
-operable program or batch file.
+3 thread(s), string sharedStringLength 30, 2 iterations, 0 runType
+Thread 1: CABAACABAAAACABCCAAACBCBBABABB
+Thread 2: CABAACABAAAACABCCAAACBCBBABABC
+Thread 0: CABAACABAAAACABCCAAACBCBBABABC
+Thread 2: BABABABABABCBBABABABBCAACABAAC
+Thread 0: BABABABABABCBBABABABBCAACABAAB
+Thread 1: BABABABABABCBBABABABBCAACABAAB
+Press enter to continue
  
 --- Iteration 33 --- 
-'.\x64\Debug\RaceCondition.exe' is not recognized as an internal or external command,
-operable program or batch file.
+3 thread(s), string sharedStringLength 30, 2 iterations, 0 runType
+Thread 0: AABABABABCBCBABCCCCCCBCBBCBABA
+Thread 1: AABABABABCBCBABCCCCCCBCBBCBABB
+Thread 2: AABABABABCBCBABCCCCCCBCBBCBABC
+Thread 0: ACBBABABABABCBABAABABABABBAACC
+Thread 2: ACBBABABABABCBABAABABABABBAACB
+Thread 1: ACBBABABABABCBABAABABABABBAACB
+Press enter to continue
  
 --- Iteration 34 --- 
-'.\x64\Debug\RaceCondition.exe' is not recognized as an internal or external command,
-operable program or batch file.
+3 thread(s), string sharedStringLength 30, 2 iterations, 0 runType
+Thread 2: ABACAAAABABABABABABBABAABABABA
+Thread 1: ABACAAAABABABABABABBABAABABABA
+Thread 0: ABACAAAABABABABABABBABAABABABA
+Thread 2: ABAABABBABABBABABACACBACACABAC
+Thread 1: ABAABABBABABBABABACACBACACABAA
+Thread 0: ABAABABBABABBABABACACBACACABAA
+Press enter to continue
  
 --- Iteration 35 --- 
-'.\x64\Debug\RaceCondition.exe' is not recognized as an internal or external command,
-operable program or batch file.
+3 thread(s), string sharedStringLength 30, 2 iterations, 0 runType
+Thread 2: AAACBABBAACABABACABCABAAACCABA
+Thread 1: AAACBABBAACABABACABCABAAACCABA
+Thread 0: AAACBABBAACABABACABCABAAACCABA
+Thread 1: BAABABBBABCCBACCAABCBBCBBCABCA
+Thread 0: BAABABBBABCCBACCAABCBBCBBCABCA
+Thread 2: BAABABBBABCCBACCAABCBBCBBCABCA
+Press enter to continue
  
 --- Iteration 36 --- 
-'.\x64\Debug\RaceCondition.exe' is not recognized as an internal or external command,
-operable program or batch file.
+3 thread(s), string sharedStringLength 30, 2 iterations, 0 runType
+Thread 2: BBABABABCBABCBABBABCAABCCCABBB
+Thread 1: BBABABABCBABCBABBABCAABCCCABBA
+Thread 0: BBABABABCBABCBABBABCAABCCCABBA
+Thread 2: CCBAAABBABBACAABAAABABAABABAAC
+Thread 1: CCBAAABBABBACAABAAABABAABABAAB
+Thread 0: CCBAAABBABBACAABAAABABAABABAAA
+Press enter to continue
  
 --- Iteration 37 --- 
-'.\x64\Debug\RaceCondition.exe' is not recognized as an internal or external command,
-operable program or batch file.
+3 thread(s), string sharedStringLength 30, 2 iterations, 0 runType
+Thread 2: CAAACBABCACCAABABABBAABABABBAC
+Thread 1: CAAACBABCACCAABABABBAABABABBAA
+Thread 0: CAAACBABCACCAABABABBAABABABBAA
+Thread 0: BCABAABBBAABCBABABABAABABAAAAB
+Thread 1: BCABAABBBAABCBABABABAABABAAAAC
+Thread 2: BCABAABBBAABCBABABABAABABAAAAC
+Press enter to continue
  
 --- Iteration 38 --- 
-'.\x64\Debug\RaceCondition.exe' is not recognized as an internal or external command,
-operable program or batch file.
+3 thread(s), string sharedStringLength 30, 2 iterations, 0 runType
+Thread 1: AAABBABACABAABAABABABCBACABBBA
+Thread 0: AAABBABACABAABAABABABCBACABBBA
+Thread 2: AAABBABACABAABAABABABCBACABBBC
+Thread 1: BBBBABAACABCBCBACABABCCACBAABA
+Thread 0: BBBBABAACABCBCBACABABCCACBAABC
+Thread 2: BBBBABAACABCBCBACABABCCACBAABC
+Press enter to continue
  
 --- Iteration 39 --- 
-'.\x64\Debug\RaceCondition.exe' is not recognized as an internal or external command,
-operable program or batch file.
+3 thread(s), string sharedStringLength 30, 2 iterations, 0 runType
+Thread 2: CCBCCCCCCCBABBABABAABABABABABB
+Thread 1: CCBCCCCCCCBABBABABAABABABABABB
+Thread 0: CCBCCCCCCCBABBABABAABABABABABA
+Thread 2: ABABABABCBCBABABCBCCBBABAABABC
+Thread 1: ABABABABCBCBABABCBCCBBABAABABB
+Thread 0: ABABABABCBCBABABCBCCBBABAABABA
+Press enter to continue
  
 --- Iteration 40 --- 
-'.\x64\Debug\RaceCondition.exe' is not recognized as an internal or external command,
-operable program or batch file.
+3 thread(s), string sharedStringLength 30, 2 iterations, 0 runType
+Thread 2: BABACCBAAAAABABCCABABABAABCABC
+Thread 0: BABACCBAAAAABABCCABABABAABCABA
+Thread 1: BABACCBAAAAABABCCABABABAABCABA
+Thread 1: BAABBABCACABABCCBABABACABABCAA
+Thread 0: BAABBABCACABABCCBABABACABABCAA
+Thread 2: BAABBABCACABABCCBABABACABABCAA
+Press enter to continue
  
 --- Iteration 41 --- 
-'.\x64\Debug\RaceCondition.exe' is not recognized as an internal or external command,
-operable program or batch file.
+3 thread(s), string sharedStringLength 30, 2 iterations, 0 runType
+Thread 2: AAAACAAAACCCCBABCABCACCBABBCBC
+Thread 1: AAAACAAAACCCCBABCABCACCBABBCBB
+Thread 0: AAAACAAAACCCCBABCABCACCBABBCBA
+Thread 0: BACCBBABACCAABABACCCCBABAACCBC
+Thread 1: BACCBBABACCAABABACCCCBABAACCBC
+Thread 2: BACCBBABACCAABABACCCCBABAACCBC
+Press enter to continue
  
 --- Iteration 42 --- 
-'.\x64\Debug\RaceCondition.exe' is not recognized as an internal or external command,
-operable program or batch file.
+3 thread(s), string sharedStringLength 30, 2 iterations, 0 runType
+Thread 2: BACABBAAAAAAAAAAAAACAACAABAAAB
+Thread 1: BACABBAAAAAAAAAAAAACAACAABAAAB
+Thread 0: BACABBAAAAAAAAAAAAACAACAABAAAA
+Thread 2: AAAAABABBCABBCAAAAAAAACABAAAAB
+Thread 1: AAAAABABBCABBCAAAAAAAACABAAAAB
+Thread 0: AAAAABABBCABBCAAAAAAAACABAAAAA
+Press enter to continue
  
 --- Iteration 43 --- 
-'.\x64\Debug\RaceCondition.exe' is not recognized as an internal or external command,
-operable program or batch file.
+3 thread(s), string sharedStringLength 30, 2 iterations, 0 runType
+Thread 2: CBABABAABACABABBBABABAABABBABC
+Thread 0: CBABABAABACABABBBABABAABABBABB
+Thread 1: CBABABAABACABABBBABABAABABBABB
+Thread 2: ABABABABCBACABABABACBBABABBABC
+Thread 1: ABABABABCBACABABABACBBABABBABA
+Thread 0: ABABABABCBACABABABACBBABABBABA
+Press enter to continue
  
 --- Iteration 44 --- 
-'.\x64\Debug\RaceCondition.exe' is not recognized as an internal or external command,
-operable program or batch file.
+3 thread(s), string sharedStringLength 30, 2 iterations, 0 runType
+Thread 2: ABABCBABABABABABABABBBAAABAAAC
+Thread 1: ABABCBABABABABABABABBBAAABAAAB
+Thread 0: ABABCBABABABABABABABBBAAABAAAA
+Thread 0: ABABABCBABAAACBACCABBABCACCBAB
+Thread 1: ABABABCBABAAACBACCABBABCACCBAB
+Thread 2: ABABABCBABAAACBACCABBABCACCBAC
+Press enter to continue
  
 --- Iteration 45 --- 
-'.\x64\Debug\RaceCondition.exe' is not recognized as an internal or external command,
-operable program or batch file.
+3 thread(s), string sharedStringLength 30, 2 iterations, 0 runType
+Thread 2: BBCBABABABABAABBAAABACABCBACAC
+Thread 0: BBCBABABABABAABBAAABACABCBACAB
+Thread 1: BBCBABABABABAABBAAABACABCBACAB
+Thread 0: BABCABAABABABBABCCABABABABBAAA
+Thread 1: BABCABAABABABBABCCABABABABBAAB
+Thread 2: BABCABAABABABBABCCABABABABBAAC
+Press enter to continue
  
 --- Iteration 46 --- 
-'.\x64\Debug\RaceCondition.exe' is not recognized as an internal or external command,
-operable program or batch file.
+3 thread(s), string sharedStringLength 30, 2 iterations, 0 runType
+Thread 1: BABAACBABBABACAABACACCACBCACCB
+Thread 2: BABAACBABBABACAABACACCACBCACCC
+Thread 0: BABAACBABBABACAABACACCACBCACCA
+Thread 1: CCBAABAAAABABABAABABABBBCBACAC
+Thread 2: CCBAABAAAABABABAABABABBBCBACAC
+Thread 0: CCBAABAAAABABABAABABABBBCBACAC
+Press enter to continue
  
 --- Iteration 47 --- 
-'.\x64\Debug\RaceCondition.exe' is not recognized as an internal or external command,
-operable program or batch file.
+3 thread(s), string sharedStringLength 30, 2 iterations, 0 runType
+Thread 2: AAAAAAAAAACAAAAAAAAAABAAAAAAAC
+Thread 1: AAAAAAAAAACAAAAAAAAAABAAAAAAAB
+Thread 0: AAAAAAAAAACAAAAAAAAAABAAAAAAAA
+Thread 2: BBAAACBAABBAAABAACAAAAAAAAAAAC
+Thread 1: BBAAACBAABBAAABAACAAAAAAAAAAAB
+Thread 0: BBAAACBAABBAAABAACAAAAAAAAAAAA
+Press enter to continue
  
 --- Iteration 48 --- 
-'.\x64\Debug\RaceCondition.exe' is not recognized as an internal or external command,
-operable program or batch file.
+3 thread(s), string sharedStringLength 30, 2 iterations, 0 runType
+Thread 2: ACCCCBABBABABABABACACCABABBABA
+Thread 0: ACCCCBABBABABABABACACCABABBABA
+Thread 1: ACCCCBABBABABABABACACCABABBABA
+Thread 2: CACAABCBABCBCACCBABAABABCCCBAC
+Thread 0: CACAABCBABCBCACCBABAABABCCCBAA
+Thread 1: CACAABCBABCBCACCBABAABABCCCBAB
+Press enter to continue
  
 --- Iteration 49 --- 
-'.\x64\Debug\RaceCondition.exe' is not recognized as an internal or external command,
-operable program or batch file.
+3 thread(s), string sharedStringLength 30, 2 iterations, 0 runType
+Thread 2: ABABAABCBACABABABABAABAABBBABC
+Thread 1: ABABAABCBACABABABABAABAABBBABB
+Thread 0: ABABAABCBACABABABABAABAABBBABA
+Thread 2: BAACBBAAABABABABBABABABABBBABC
+Thread 1: BAACBBAAABABABABBABABABABBBABC
+Thread 0: BAACBBAAABABABABBABABABABBBABA
+Press enter to continue
  
 --- Iteration 50 --- 
-'.\x64\Debug\RaceCondition.exe' is not recognized as an internal or external command,
-operable program or batch file.
+3 thread(s), string sharedStringLength 30, 2 iterations, 0 runType
+Thread 2: CBCAACAAAAAACCBABCABAAAAAAABAC
+Thread 1: CBCAACAAAAAACCBABCABAAAAAAABAA
+Thread 0: CBCAACAAAAAACCBABCABAAAAAAABAA
+Thread 1: BAABABABABABACBABABBABABCCBCAB
+Thread 2: BAABABABABABACBABABBABABCCBCAC
+Thread 0: BAABABABABABACBABABBABABCCBCAA
+Press enter to continue
  

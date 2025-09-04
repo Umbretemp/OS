@@ -19,7 +19,7 @@ if "%5"=="" (
 )
 
 REM -- Configuration from Command-Line Arguments --
-set EXECUTABLE=.\x64\Debug\RaceCondition.exe
+set EXECUTABLE=..\x64\Debug\RaceCondition.exe
 set threadCount=%1
 set stringLength=%2
 set numStrings=%3
@@ -40,7 +40,7 @@ echo. >> %OUTPUT_FILE%
 
 for /L %%i in (1, 1, %ITERATIONS%) do (
     echo --- Iteration %%i --- >> %OUTPUT_FILE%
-    %EXECUTABLE% %ARGS% >> %OUTPUT_FILE% 2>>&1
+    (echo.) | %EXECUTABLE% %ARGS% >> %OUTPUT_FILE% 2>>&1
     echo. >> %OUTPUT_FILE%
 )
 
