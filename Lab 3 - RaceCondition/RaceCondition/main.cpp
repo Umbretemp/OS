@@ -61,14 +61,45 @@ void ThreadEntryPoint(ThreadStruct *threadData)
 	//		 However do NOT duplicate the following code.
 	///////////////////////////////////////////////////////////////////////////////////	
 
+	// RunType 3 condV lock
+	std::unique_lock<std::mutex> uniqueLock(*threadData->mtx, std::defer_lock);
+
+	if(threadData->runType == 2) // runType 2 lock
+		threadData->mtx->lock();
+	else if (threadData->runType == 3) // runType 3 lock
+	{
+		uniqueLock.lock();
+		// blocked till ID matches turn counter
+		threadData->condV->wait(uniqueLock, [&] { return *threadData->turn == threadData->id; }); // my favs lamdas :)
+	}
+
 	for(int i = 0; i < threadData->numberOfStringsToGenerate; i++, std::this_thread::sleep_for(std::chrono::milliseconds(10)))
 	{
+		// runType 1 lock
+		if (threadData->runType == 1)
+			threadData->mtx->lock();
+		
 		for(int j = 0; j < threadData->sharedStringLength; j++)
 		{
 			std::this_thread::sleep_for(std::chrono::milliseconds(1));
 			threadData->sharedString[j] = 'A' + threadData->id;
 		}
 		printf("Thread %d: %s\n", threadData->id, threadData->sharedString);
+
+		// runType 1 unlock
+		if (threadData->runType == 1)
+			threadData->mtx->unlock();
+	}
+	
+	if(threadData->runType == 2) // runType 2 unlock
+		threadData->mtx->unlock();
+	else if (threadData->runType == 3) // runType 3 unlock
+	{
+		// counter increment at end of func so thread can continue
+		(*threadData->turn)++;
+		uniqueLock.unlock();
+		// update threads
+		threadData->condV->notify_all();
 	}
 
 	///////////////////////////////////////////////////////////////////////////////////
