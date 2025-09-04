@@ -5,6 +5,7 @@
 #include <thread>
 #include <mutex>
 #include <condition_variable>
+#include <vector>
 
 
 // Include file and line numbers for memory leak detection for visual studio in debug mode
@@ -134,6 +135,7 @@ int main(int argc, char** argv)
 	// TODO:: You will need a container to store the thread class objects. It is up to you
 	//   to decide how you want to store the threads.
 	///////////////////////////////////////////////////////////////////////////////////	
+	std::vector<std::thread> threads;
 
 	// NOTE: Do NOT change this for loop header
 	for (int i = threadCount - 1; i >= 0; i--)
@@ -155,7 +157,11 @@ int main(int argc, char** argv)
 	//   Joinable threads we must Join each one. Joining a thread will cause
 	//   the calling thread (main in this case) to block until the thread being
 	//   joined has completed executing.
-	///////////////////////////////////////////////////////////////////////////////////	
+	///////////////////////////////////////////////////////////////////////////////////
+	for (auto& t : threads)
+	{
+		t.join();
+	}	
 
 	Pause();
 	
