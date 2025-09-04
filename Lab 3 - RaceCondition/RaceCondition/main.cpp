@@ -3,6 +3,8 @@
 ///////////////////////////////////////////////////////////////////////////////////
 #include <iostream>
 #include <thread>
+#include <mutex>
+#include <condition_variable>
 
 
 // Include file and line numbers for memory leak detection for visual studio in debug mode
