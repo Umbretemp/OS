@@ -51,7 +51,11 @@ struct ThreadStruct
 	
 	///////////////////////////////////////////////////////////////////////////////////
 	// TODO:: Any new data to pass to thread should be put here
-	///////////////////////////////////////////////////////////////////////////////////	
+	///////////////////////////////////////////////////////////////////////////////////
+	bool* endDetachedThreads;
+	std::mutex* mtx;
+	int* detachedThreadCount;
+	std::condition_variable* condV;
 };
 
 ///////////////////////////////////////////////////////////////////////////////////
@@ -177,6 +181,11 @@ int main(int argc, char **argv)
 	///////////////////////////////////////////////////////////////////////////////////	
 	// TODO:: Declare your variables here
 	///////////////////////////////////////////////////////////////////////////////////
+	std::mutex mtx;
+	std::condition_variable condV;
+	std::vector<std::thread> threads;
+	bool endDetachedThreads = false;
+	int detachedThreadCount = 0;
 
 	ThreadStruct *perThreadData = new ThreadStruct[totalThreadCount];
 	printf("Main thread starting %d thread(s)\n", totalThreadCount);
@@ -191,6 +200,10 @@ int main(int argc, char **argv)
 		//   odd then the thread must execute the 'detached' logic in a detached state, otherwise
 		//   the thread must execute the 'joinable' logic.
 		///////////////////////////////////////////////////////////////////////////////////
+		perThreadData[i].endDetachedThreads = &endDetachedThreads;
+		perThreadData[i].detachedThreadCount = &detachedThreadCount;
+		perThreadData[i].mtx = &mtx;
+		perThreadData[i].condV = &condV;
 	}
 
 	///////////////////////////////////////////////////////////////////////////////////
