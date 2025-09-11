@@ -75,6 +75,11 @@ void Pause()
 //
 // Note: You are required to use a std::promise to implement this logic.
 ////////////////////////////////////////////////////////////////////////////////////
+void ExecuteWork(int id, std::future<int> workFuture)
+{
+	// get waits for worker thread
+	int work = workFuture.get();
+}
 
 ///////////////////////////////////////////////////////////////////////////////////
 // Entry point for joinable threads. 
@@ -91,6 +96,9 @@ void JoinableThreadEntrypoint(ThreadStruct *threadData)
 	//
 	// Note: You are required to use a std::promise to implement the printing logic.
 	////////////////////////////////////////////////////////////////////////////////////
+	std::promise<int> workPromise;
+	std::future<int> workFuture = workPromise.get_future();
+	std::thread printerThread(ExecuteWork, threadData->id, std::move(workFuture));
 
 	int workLimit = (threadData->id + 1) + (threadData->myRand());
 	int work = 0;
@@ -108,6 +116,8 @@ void JoinableThreadEntrypoint(ThreadStruct *threadData)
 	// TODO:: The 'work' has been generated and the printing thread should be waiting
 	//   on the promised work to be set. Set it now so the printing thread can resume.
 	///////////////////////////////////////////////////////////////////////////////////
+	workPromise.set_value(work);
+	printerThread.join();
 }
 
 ///////////////////////////////////////////////////////////////////////////////////
