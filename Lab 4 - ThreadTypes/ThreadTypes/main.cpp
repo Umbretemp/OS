@@ -135,6 +135,9 @@ void DetachedThreadEntrypoint(ThreadStruct *threadData)
 	//
 	// Note: You are required to use a std::promise to implement the printing logic.
 	////////////////////////////////////////////////////////////////////////////////////
+	std::promise<int> workPromise;
+	std::future<int> workFuture = workPromise.get_future();
+	std::thread printerThread(ExecuteWork, threadData->id, std::move(workFuture));
 
 	int workLimit = (threadData->id + 1) + (threadData->myRand());
 	int work = 0;
@@ -147,7 +150,14 @@ void DetachedThreadEntrypoint(ThreadStruct *threadData)
 		//		  (HINT: thread safe means that only ONE thread should be check or modifying
 		//		   shared data at a time)
 		///////////////////////////////////////////////////////////////////////////////////
-
+		threadData->mtx->lock();
+		if(*(threadData->endDetachedThreads))
+		{
+			threadData->mtx->unlock();
+			break;
+		}
+		threadData->mtx->unlock();		
+		
 		// Performs some arbitrary amount of work.
 		for (int i = 0; i < workLimit; i += (threadData->id + 1)) 
 		{ 
@@ -159,10 +169,16 @@ void DetachedThreadEntrypoint(ThreadStruct *threadData)
 	///////////////////////////////////////////////////////////////////////////////////
 	// TODO:: Set the std::promise's value and wait for the printer thread to finish.
 	///////////////////////////////////////////////////////////////////////////////////
+	workPromise.set_value(work); // signals worker thread
+	printerThread.join();
 
 	///////////////////////////////////////////////////////////////////////////////////
 	// TODO:: Let main know there's one less thread running.
 	///////////////////////////////////////////////////////////////////////////////////
+	threadData0>mtx->lock();
+	(*(threadData->detachedThreadCount))--;
+	threadData->mtx->unlock();
+	threadData->condV->notify_one(); // all?
 }
 
 int main(int argc, char **argv)
