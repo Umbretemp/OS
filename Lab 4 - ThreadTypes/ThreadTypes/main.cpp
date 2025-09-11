@@ -204,11 +204,28 @@ int main(int argc, char **argv)
 		perThreadData[i].detachedThreadCount = &detachedThreadCount;
 		perThreadData[i].mtx = &mtx;
 		perThreadData[i].condV = &condV;
+
+		if (i % 2 != 0) // odd 
+		{
+			mtx.lock();
+            detachedThreadCount++;
+            mtx.unlock();
+            std::thread t(DetachedThreadEntrypoint, &perThreadData[i]);
+            t.detach();
+		}
+		else // even
+		{
+			threads.emplace_back(JoinableThreadEntrypoint, &perThreadData[i]);
+		}
 	}
 
 	///////////////////////////////////////////////////////////////////////////////////
 	// TODO:: Wait for all joinable threads to complete
-	///////////////////////////////////////////////////////////////////////////////////	
+	///////////////////////////////////////////////////////////////////////////////////
+	for (auto& t : threads)
+	{
+		t.join();
+	}	
 
 	///////////////////////////////////////////////////////////////////////////////////
 	// TODO:: let detached threads know they need to shut down using the flag you
