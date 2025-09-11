@@ -79,6 +79,7 @@ void ExecuteWork(int id, std::future<int> workFuture)
 {
 	// get waits for worker thread
 	int work = workFuture.get();
+	printf("PROCESS: Thread %d, processed work value %d\n", id, work);
 }
 
 ///////////////////////////////////////////////////////////////////////////////////
