@@ -178,7 +178,7 @@ void DetachedThreadEntrypoint(ThreadStruct *threadData)
 	threadData0>mtx->lock();
 	(*(threadData->detachedThreadCount))--;
 	threadData->mtx->unlock();
-	threadData->condV->notify_one(); // all?
+	threadData->condV->notify_one(); // all? cause multiple threads have been created
 }
 
 int main(int argc, char **argv)
@@ -258,6 +258,9 @@ int main(int argc, char **argv)
 	//   created in the thread structure. You may only set the flag once here (you should
 	//   not have more than one flag) and it must be in a thread safe manner.
 	///////////////////////////////////////////////////////////////////////////////////
+	mtx.lock();
+	endDetachedThreads = true;
+	mtx.unlock();
 
 	///////////////////////////////////////////////////////////////////////////////////
 	// TODO:: Wait for all detached threads to finish without using a busy-wait loop.
@@ -265,7 +268,9 @@ int main(int argc, char **argv)
 	//   wasting CPU cycles. 
 	//   (HINT: Remember there is a specific object that can Wait for a Condition)
 	///////////////////////////////////////////////////////////////////////////////////
-
+	std::unique_lock<std::mutex> lock(mtx);
+	condV.wait(lock, [&] {return detachedThreadCount == 0 });
+	
 	///////////////////////////////////////////////////////////////////////////////////
 	// TODO:: Cleanup
 	///////////////////////////////////////////////////////////////////////////////////
