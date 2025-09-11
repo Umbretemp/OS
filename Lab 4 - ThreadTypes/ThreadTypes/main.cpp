@@ -175,7 +175,7 @@ void DetachedThreadEntrypoint(ThreadStruct *threadData)
 	///////////////////////////////////////////////////////////////////////////////////
 	// TODO:: Let main know there's one less thread running.
 	///////////////////////////////////////////////////////////////////////////////////
-	threadData0>mtx->lock();
+	threadData->mtx->lock();
 	(*(threadData->detachedThreadCount))--;
 	threadData->mtx->unlock();
 	threadData->condV->notify_one(); // all? cause multiple threads have been created
@@ -269,7 +269,7 @@ int main(int argc, char **argv)
 	//   (HINT: Remember there is a specific object that can Wait for a Condition)
 	///////////////////////////////////////////////////////////////////////////////////
 	std::unique_lock<std::mutex> lock(mtx);
-	condV.wait(lock, [&] {return detachedThreadCount == 0 });
+	condV.wait(lock, [&] {return detachedThreadCount == 0; });
 	
 	///////////////////////////////////////////////////////////////////////////////////
 	// TODO:: Cleanup
