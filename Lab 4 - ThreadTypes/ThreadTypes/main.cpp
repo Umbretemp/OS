@@ -111,14 +111,17 @@ void JoinableThreadEntrypoint(ThreadStruct *threadData)
 		work++;
 	}
 
+	workPromise.set_value(work); // signals worker thread
+	printerThread.join();
+
 	printf("FINISH: Joinable thread %d, finished with value %d\n", threadData->id, work);
 
 	///////////////////////////////////////////////////////////////////////////////////
 	// TODO:: The 'work' has been generated and the printing thread should be waiting
 	//   on the promised work to be set. Set it now so the printing thread can resume.
 	///////////////////////////////////////////////////////////////////////////////////
-	workPromise.set_value(work);
-	printerThread.join();
+	// moved above finish print for clarity
+
 }
 
 ///////////////////////////////////////////////////////////////////////////////////
@@ -165,13 +168,15 @@ void DetachedThreadEntrypoint(ThreadStruct *threadData)
 			work++;
 		}
 	}
+	workPromise.set_value(work); // signals worker thread
+	printerThread.join();
+
 	printf("FINISH: Detached thread %d, finished with value %d\n", threadData->id, work);
 
 	///////////////////////////////////////////////////////////////////////////////////
 	// TODO:: Set the std::promise's value and wait for the printer thread to finish.
 	///////////////////////////////////////////////////////////////////////////////////
-	workPromise.set_value(work); // signals worker thread
-	printerThread.join();
+	// moved above finish print for clarity
 
 	///////////////////////////////////////////////////////////////////////////////////
 	// TODO:: Let main know there's one less thread running.
