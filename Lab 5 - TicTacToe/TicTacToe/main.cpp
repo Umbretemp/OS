@@ -8,7 +8,9 @@
 #include <vector>
 #include <random>
 #include <future>
-#include <varargs.h>
+#include <stdio.h>
+#include <stdarg.h>
+// would not do vprintf() properly and corrupted the args #include <varargs.h>
 
 
 
@@ -721,7 +723,7 @@ int main(int argc, char **argv)
 		return 1;
 	}
 
-	printf("%s starting %d player(s) for %d game(s)\n", argv[0], totalPlayerCount, totalGameCount);
+	Log("%s starting %d player(s) for %d game(s)\n", argv[0], totalPlayerCount, totalGameCount);
 
 	// Allocate and array of players
 	perPlayerData = new Player[totalPlayerCount];
