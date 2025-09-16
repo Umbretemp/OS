@@ -383,11 +383,11 @@ GameState MakeAMove(Player *currentPlayer, Game *currentGame)
 		int col = possibleMoves[randomMoveIndex] % 3;
 		currentGame->gameBoard[row][col] = currentPlayer->type;
 
-		printf("Game %d: Player %d: Picked [Row: %d, Col: %d]\n", currentGame->gameNumber, currentPlayer->id, row,  col);
+		Log("Game %d: Player %d: Picked [Row: %d, Col: %d]\n", currentGame->gameNumber, currentPlayer->id, row,  col);
 
 		if (DidWeWin(row, col, currentGame, currentPlayer)) 
 		{ 
-			printf("Game %d:Player %d - Won\n", currentGame->gameNumber, currentPlayer->id);
+			Log("Game %d:Player %d - Won\n", currentGame->gameNumber, currentPlayer->id);
 			currentPlayer->winCount++;
 
 			return GameState::Won;
@@ -399,7 +399,7 @@ GameState MakeAMove(Player *currentPlayer, Game *currentGame)
 	}
 
 	// There are no more moves left, game resulted in a draw.
-	printf("Game %d:Player %d - Draw\n", currentGame->gameNumber, currentPlayer->id);
+	Log("Game %d:Player %d - Draw\n", currentGame->gameNumber, currentPlayer->id);
 	currentPlayer->drawCount++;
 
 	return GameState::Draw;
@@ -421,11 +421,11 @@ GameState MakeAMove(Player *currentPlayer, Game *currentGame)
 ///////////////////////////////////////////////////////////////////////////////////
 void PlayGame(Player *currentPlayer, Game *currentGame)
 {
-	printf("Game %d:Player %d vs Player %d (Player %d) starting\n", currentGame->gameNumber, currentGame->playerX, currentGame->playerO, currentPlayer->id);
+	Log("Game %d:Player %d vs Player %d (Player %d) starting\n", currentGame->gameNumber, currentGame->playerX, currentGame->playerO, currentPlayer->id);
 
 	if(currentGame->playerO == -1 || currentGame->playerX == -1)
 	{
-		printf("ERROR: Playing game with only one player present. Did you forget to wait for the second player in JoinGame()?\n");
+		Log("ERROR: Playing game with only one player present. Did you forget to wait for the second player in JoinGame()?\n");
 		Pause();
 		exit(1);
 	}
@@ -434,7 +434,7 @@ void PlayGame(Player *currentPlayer, Game *currentGame)
 	{ 
 		if (currentGame->currentTurn != currentPlayer->type) 
 		{
-			printf("ERROR: Wrong player is playing. You broke it.\n");
+			Log("ERROR: Wrong player is playing. You broke it.\n");
 			Pause();
 			exit(1);
 		}
@@ -476,12 +476,12 @@ void PlayGame(Player *currentPlayer, Game *currentGame)
 	//   upon finding out the game is over.
 	if (currentGame->currentGameState == GameState::Won) 
 	{ 
-		printf("Game %d:Player %d - Lost\n", currentGame->gameNumber, currentPlayer->id);
+		Log("Game %d:Player %d - Lost\n", currentGame->gameNumber, currentPlayer->id);
 		(currentPlayer->loseCount)++;
 	}
 	else if(currentGame->currentGameState == GameState::Draw) 
 	{ 
-		printf("Game %d:Player %d - Draw\n", currentGame->gameNumber, currentPlayer->id);
+		Log("Game %d:Player %d - Draw\n", currentGame->gameNumber, currentPlayer->id);
 		(currentPlayer->drawCount)++; // count draw
 	}
 }
@@ -509,7 +509,7 @@ void JoinGame(Player *currentPlayer, Game *currentGame)
 
 	if (currentGame->playerO == -1)
 	{
-		printf("Player %d joining game %d as 'O'\n", currentPlayer->id, currentGame->gameNumber);
+		Log("Player %d joining game %d as 'O'\n", currentPlayer->id, currentGame->gameNumber);
 
 		currentGame->playerO = currentPlayer->id;
 		currentPlayer->type = PlayerType::O;
@@ -522,7 +522,7 @@ void JoinGame(Player *currentPlayer, Game *currentGame)
 	}
 	else 
 	{
-		printf("Player %d joining game %d as 'X'\n", currentPlayer->id, currentGame->gameNumber);
+		Log("Player %d joining game %d as 'X'\n", currentPlayer->id, currentGame->gameNumber);
 
 		currentGame->playerX = currentPlayer->id;
 		currentPlayer->type = PlayerType::X;
@@ -543,7 +543,7 @@ void JoinGame(Player *currentPlayer, Game *currentGame)
 ///////////////////////////////////////////////////////////////////////////////////
 void TryToPlayEachGame(Player *currentPlayer)
 {
-	printf("Player %d starting to play games...\n", currentPlayer->id);
+	Log("Player %d starting to play games...\n", currentPlayer->id);
 
 	Game *listOfGames = currentPlayer->gamePool->perGameData;
 	int totalGameCount = currentPlayer->gamePool->totalGameCount;
@@ -579,7 +579,7 @@ void TryToPlayEachGame(Player *currentPlayer)
 ///////////////////////////////////////////////////////////////////////////////////
 void PlayerThreadEntrypoint(Player *currentPlayer)
 {
-	printf("Player %d waiting on starting gun\n", currentPlayer->id);
+	Log("Player %d waiting on starting gun\n", currentPlayer->id);
 
 	///////////////////////////////////////////////////////////////////////////////////
 	// TODO:: Let main know there's one more player thread running then wait for a
@@ -606,7 +606,7 @@ void PlayerThreadEntrypoint(Player *currentPlayer)
 	}
 
 	// Attempt to play each game, all of the game logic will occur in this function
-	printf("Player %d running\n", currentPlayer->id);
+	Log("Player %d running\n", currentPlayer->id);
 	TryToPlayEachGame(currentPlayer);
 
 	///////////////////////////////////////////////////////////////////////////////////
@@ -639,10 +639,10 @@ void PrintResults(const Player *perPlayerData, int totalPlayerCount, const Game 
 	int totalPlayerLoses = 0;
 	int totalPlayerTies = 0;
 
-	printf("********* Player Results **********\n");
+	Log("********* Player Results **********\n");
 	for (int i = 0; i < totalPlayerCount; i++) 
 	{
-		printf("Player %d, Played %d game(s), Won %d, Lost %d, Draw %d\n",
+		Log("Player %d, Played %d game(s), Won %d, Lost %d, Draw %d\n",
 			perPlayerData[i].id,
 			perPlayerData[i].gamesPlayed,
 			perPlayerData[i].winCount,
@@ -655,12 +655,12 @@ void PrintResults(const Player *perPlayerData, int totalPlayerCount, const Game 
 		totalPlayerTies += perPlayerData[i].drawCount;
 	}
 
-	printf("Total Players %d, Wins %d, Losses %d, Draws %d\n\n\n", totalPlayerCount, totalPlayerWins, totalPlayerLoses, (totalPlayerTies / 2));
+	Log("Total Players %d, Wins %d, Losses %d, Draws %d\n\n\n", totalPlayerCount, totalPlayerWins, totalPlayerLoses, (totalPlayerTies / 2));
 
-	printf("********* Game Results **********\n");
+	Log("********* Game Results **********\n");
 	for (int i = 0; i < totalGameCount; i++)
 	{
-		printf("Game %d - 'X' player %d, 'O' player %d, game result %s\n", 
+		Log("Game %d - 'X' player %d, 'O' player %d, game result %s\n", 
 			perGameData[i].gameNumber,
 			perGameData[i].playerX,
 			perGameData[i].playerO,
@@ -676,7 +676,7 @@ void PrintResults(const Player *perPlayerData, int totalPlayerCount, const Game 
 			totalGamesTied++;
 		}
 	}
-	printf("Total Games = %d, %d Games Won, %d Games were a Draw\n\n\n", totalGameCount, totalGamesWon, totalGamesTied);
+	Log("Total Games = %d, %d Games Won, %d Games were a Draw\n\n\n", totalGameCount, totalGamesWon, totalGamesTied);
 }
 
 int main(int argc, char **argv)
