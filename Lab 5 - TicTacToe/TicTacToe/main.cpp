@@ -587,7 +587,10 @@ void PlayerThreadEntrypoint(Player *currentPlayer)
 	//   opposite, to what you did in the first TODO of this function.
 	///////////////////////////////////////////////////////////////////////////////////
 	{
-
+		std::unique_lock<std::mutex> lock(currentPlayer->playerPool->playerMutex);
+		currentPlayer->playerPool->runningPlayerCount--;
+		if (currentPlayer->playerPool->runningPlayerCount == 0)
+			currentPlayer->playerPool->allPlayersDone.notify_one(); // main waiting
 	}
 }
 
