@@ -733,6 +733,10 @@ int main(int argc, char **argv)
 	// TODO:: Start the player threads. The player threads should begin executing in
 	//   the PlayerThreadEntrypoint function. Make sure to detach the threads.
 	///////////////////////////////////////////////////////////////////////////////////
+	for (int i = 0; i < totalPlayerCount; i++)
+	{
+		std::thread(PlayerThreadEntrypoint, &perPlayerData[i]).detach();
+	}
 
 	///////////////////////////////////////////////////////////////////////////////////
 	// TODO:: Wait for all players to be ready 
