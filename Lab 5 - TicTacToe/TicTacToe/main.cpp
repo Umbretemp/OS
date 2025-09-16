@@ -741,14 +741,33 @@ int main(int argc, char **argv)
 	///////////////////////////////////////////////////////////////////////////////////
 	// TODO:: Wait for all players to be ready 
 	///////////////////////////////////////////////////////////////////////////////////
+	while (true)
+	{
+		std::unique_lock<std::mutex> lock(poolOfPlayers.playerMutex);
+		if (poolOfPlayers.runningPlayerCount == totalPlayerCount)
+			break;
+		lock.unlock();
+		std::this_thread::yield();
+	}
 
 	///////////////////////////////////////////////////////////////////////////////////
 	// TODO:: Notify all waiting threads that they can start playing.
 	///////////////////////////////////////////////////////////////////////////////////
+	//scope
+	{
+		std::unique_lock<std::mutex> lock(poolOfPlayers.playerMutex);
+		poolOfPlayers.gunFired = true;
+		poolOfPlayers.startingGun.notify_all();
+	}
 
 	///////////////////////////////////////////////////////////////////////////////////
 	// TODO:: Wait for all detached player threads to complete.
 	///////////////////////////////////////////////////////////////////////////////////
+	// scope
+	{
+		std::unique_lock<std::mutex> lock(poolOfPlayers.playerMutex);
+		poolOfPlayers.allPlayersDone.wait(lock, [&] { return poolOfPlayers.runningPlayerCount == 0; }); // lambs :D
+	}
 
 	PrintResults(perPlayerData, totalPlayerCount, perGameData, totalGameCount);
 
