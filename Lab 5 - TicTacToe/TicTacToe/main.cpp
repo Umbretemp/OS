@@ -429,18 +429,22 @@ void PlayGame(Player *currentPlayer, Game *currentGame)
 				// TODO:: The game is not over yet. We need to notify the other player that it's
 				//   their turn and then we must wait until they tell us it's our turn.
 				///////////////////////////////////////////////////////////////////////////////////
+				currentGame->gameCondition.notify_one(); // wake other player
+				currentGame->gameCondition.wait(*currentGame->gameUniqueLock);
 				continue;
 			case GameState::Won:
 				///////////////////////////////////////////////////////////////////////////////////
 				// TODO:: We have won the game, we must wake up the other player so they can break
 				//   out of the PlayGame function.
 				///////////////////////////////////////////////////////////////////////////////////
+				currentGame->gameCondition.notify_one(); // wake other player
 				return;
 			case GameState::Draw:
 				///////////////////////////////////////////////////////////////////////////////////
 				// TODO:: The game ended in a tie, we must wake up the other player so they can break
 				//   out of the PlayGame function
 				///////////////////////////////////////////////////////////////////////////////////
+				currentGame->gameCondition.notify_one(); // wake other player
 				return;
 		}
 	}
