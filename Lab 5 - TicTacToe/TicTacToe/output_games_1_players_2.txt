@@ -1,0 +1,199 @@
+Running Tic-Tac-Toe Test... 
+Command: ..\x64\Debug\TicTacToe.exe 1 2 
+Iterations: 3 
+ 
+--- Iteration 1 --- 
+..\x64\Debug\TicTacToe.exe starting 2 player(s) for 1 game(s)
+Player 0 waiting on starting gun
+Player 1 waiting on starting gun
+Player 1 running
+Player 1 starting to play games...
+Player 1 joining game 1 as 'O'
+Player 0 running
+Player 0 starting to play games...
+Player 0 joining game 1 as 'X'
+Game 1:Player 0 vs Player 1 (Player 0) starting
+Game 1: Player 0: Picked [Row: 2, Col: 0]
+[ ][ ][ ]
+[ ][ ][ ]
+[X][ ][ ]
+Game 1:Player 0 vs Player 1 (Player 1) starting
+Game 1: Player 1: Picked [Row: 0, Col: 2]
+[ ][ ][O]
+[ ][ ][ ]
+[X][ ][ ]
+Game 1: Player 0: Picked [Row: 1, Col: 0]
+[ ][ ][O]
+[X][ ][ ]
+[X][ ][ ]
+Game 1: Player 1: Picked [Row: 1, Col: 1]
+[ ][ ][O]
+[X][O][ ]
+[X][ ][ ]
+Game 1: Player 0: Picked [Row: 2, Col: 2]
+[ ][ ][O]
+[X][O][ ]
+[X][ ][X]
+Game 1: Player 1: Picked [Row: 2, Col: 1]
+[ ][ ][O]
+[X][O][ ]
+[X][O][X]
+Game 1: Player 0: Picked [Row: 0, Col: 1]
+[ ][X][O]
+[X][O][ ]
+[X][O][X]
+Game 1: Player 1: Picked [Row: 1, Col: 2]
+[ ][X][O]
+[X][O][O]
+[X][O][X]
+Game 1: Player 0: Picked [Row: 0, Col: 0]
+Game 1:Player 0 - Won
+[X][X][O]
+[X][O][O]
+[X][O][X]
+Game 1:Player 1 - Lost
+********* Player Results **********
+Player 0, Played 1 game(s), Won 1, Lost 0, Draw 0
+Player 1, Played 1 game(s), Won 0, Lost 1, Draw 0
+Total Players 2, Wins 1, Losses 1, Draws 0
+
+
+********* Game Results **********
+Game 1 - 'X' player 0, 'O' player 1, game result Won
+Total Games = 1, 1 Games Won, 0 Games were a Draw
+
+
+Press Enter to continue
+ 
+--- Iteration 2 --- 
+..\x64\Debug\TicTacToe.exe starting 2 player(s) for 1 game(s)
+Player 0 waiting on starting gun
+Player 1 waiting on starting gun
+Player 1 running
+Player 1 starting to play games...
+Player 1 joining game 1 as 'O'
+Player 0 running
+Player 0 starting to play games...
+Player 0 joining game 1 as 'X'
+Game 1:Player 0 vs Player 1 (Player 0) starting
+Game 1: Player 0: Picked [Row: 2, Col: 1]
+[ ][ ][ ]
+[ ][ ][ ]
+[ ][X][ ]
+Game 1:Player 0 vs Player 1 (Player 1) starting
+Game 1: Player 1: Picked [Row: 1, Col: 0]
+[ ][ ][ ]
+[O][ ][ ]
+[ ][X][ ]
+Game 1: Player 0: Picked [Row: 1, Col: 2]
+[ ][ ][ ]
+[O][ ][X]
+[ ][X][ ]
+Game 1: Player 1: Picked [Row: 1, Col: 1]
+[ ][ ][ ]
+[O][O][X]
+[ ][X][ ]
+Game 1: Player 0: Picked [Row: 2, Col: 0]
+[ ][ ][ ]
+[O][O][X]
+[X][X][ ]
+Game 1: Player 1: Picked [Row: 0, Col: 2]
+[ ][ ][O]
+[O][O][X]
+[X][X][ ]
+Game 1: Player 0: Picked [Row: 0, Col: 1]
+[ ][X][O]
+[O][O][X]
+[X][X][ ]
+Game 1: Player 1: Picked [Row: 2, Col: 2]
+[ ][X][O]
+[O][O][X]
+[X][X][O]
+Game 1: Player 0: Picked [Row: 0, Col: 0]
+[X][X][O]
+[O][O][X]
+[X][X][O]
+Game 1:Player 1 - Draw
+[X][X][O]
+[O][O][X]
+[X][X][O]
+Game 1:Player 0 - Draw
+********* Player Results **********
+Player 0, Played 1 game(s), Won 0, Lost 0, Draw 1
+Player 1, Played 1 game(s), Won 0, Lost 0, Draw 1
+Total Players 2, Wins 0, Losses 0, Draws 1
+
+
+********* Game Results **********
+Game 1 - 'X' player 0, 'O' player 1, game result Draw
+Total Games = 1, 0 Games Won, 1 Games were a Draw
+
+
+Press Enter to continue
+ 
+--- Iteration 3 --- 
+..\x64\Debug\TicTacToe.exe starting 2 player(s) for 1 game(s)
+Player 0 waiting on starting gun
+Player 1 waiting on starting gun
+Player 1 running
+Player 1 starting to play games...
+Player 1 joining game 1 as 'O'
+Player 0 running
+Player 0 starting to play games...
+Player 0 joining game 1 as 'X'
+Game 1:Player 0 vs Player 1 (Player 0) starting
+Game 1: Player 0: Picked [Row: 0, Col: 2]
+[ ][ ][X]
+[ ][ ][ ]
+[ ][ ][ ]
+Game 1:Player 0 vs Player 1 (Player 1) starting
+Game 1: Player 1: Picked [Row: 1, Col: 2]
+[ ][ ][X]
+[ ][ ][O]
+[ ][ ][ ]
+Game 1: Player 0: Picked [Row: 2, Col: 2]
+[ ][ ][X]
+[ ][ ][O]
+[ ][ ][X]
+Game 1: Player 1: Picked [Row: 2, Col: 0]
+[ ][ ][X]
+[ ][ ][O]
+[O][ ][X]
+Game 1: Player 0: Picked [Row: 0, Col: 0]
+[X][ ][X]
+[ ][ ][O]
+[O][ ][X]
+Game 1: Player 1: Picked [Row: 0, Col: 1]
+[X][O][X]
+[ ][ ][O]
+[O][ ][X]
+Game 1: Player 0: Picked [Row: 1, Col: 0]
+[X][O][X]
+[X][ ][O]
+[O][ ][X]
+Game 1: Player 1: Picked [Row: 1, Col: 1]
+[X][O][X]
+[X][O][O]
+[O][ ][X]
+Game 1: Player 0: Picked [Row: 2, Col: 1]
+[X][O][X]
+[X][O][O]
+[O][X][X]
+Game 1:Player 1 - Draw
+[X][O][X]
+[X][O][O]
+[O][X][X]
+Game 1:Player 0 - Draw
+********* Player Results **********
+Player 0, Played 1 game(s), Won 0, Lost 0, Draw 1
+Player 1, Played 1 game(s), Won 0, Lost 0, Draw 1
+Total Players 2, Wins 0, Losses 0, Draws 1
+
+
+********* Game Results **********
+Game 1 - 'X' player 0, 'O' player 1, game result Draw
+Total Games = 1, 0 Games Won, 1 Games were a Draw
+
+
+Press Enter to continue
+ 

@@ -1,0 +1,1203 @@
+Running Tic-Tac-Toe Test... 
+Command: ..\x64\Debug\TicTacToe.exe 5 10 
+Iterations: 5 
+ 
+--- Iteration 1 --- 
+..\x64\Debug\TicTacToe.exe starting 10 player(s) for 5 game(s)
+Player 1 waiting on starting gun
+Player 3 waiting on starting gun
+Player 0 waiting on starting gun
+Player 4 waiting on starting gun
+Player 5 waiting on starting gun
+Player 6 waiting on starting gun
+Player 7 waiting on starting gun
+Player 8 waiting on starting gun
+Player 9 waiting on starting gun
+Player 2 waiting on starting gun
+Player 1 running
+Player 1 starting to play games...
+Player 1 joining game 1 as 'O'
+Player 4 running
+Player 4 starting to play games...
+Player 4 joining game 1 as 'X'
+Game 1:Player 4 vs Player 1 (Player 4) starting
+Player 0 running
+Player 0 starting to play games...
+Player 0 joining game 2 as 'O'
+Game 1: Player 4: Picked [Row: 2, Col: 0]
+[ ][ ][ ]
+[ ][ ][ ]
+[X][ ][ ]
+Game 1:Player 4 vs Player 1 (Player 1) starting
+Game 1: Player 1: Picked [Row: 2, Col: 2]
+[ ][ ][ ]
+[ ][ ][ ]
+[X][ ][O]
+Player 3 running
+Player 6 running
+Player 3 starting to play games...
+Player 3 joining game 2 as 'X'
+Player 8 running
+Player 9 running
+Player 8 starting to play games...
+Player 8 joining game 3 as 'O'
+Game 1: Player 4: Picked [Row: 0, Col: 0]
+[X][ ][ ]
+[ ][ ][ ]
+[X][ ][O]
+Player 7 running
+Player 6 starting to play games...
+Player 6 joining game 3 as 'X'
+Game 3:Player 6 vs Player 8 (Player 6) starting
+Game 2:Player 3 vs Player 0 (Player 3) starting
+Game 3: Player 6: Picked [Row: 2, Col: 2]
+[ ][ ][ ]
+[ ][ ][ ]
+[ ][ ][X]
+Player 5 running
+Game 3:Player 6 vs Player 8 (Player 8) starting
+Game 2: Player 3: Picked [Row: 0, Col: 1]
+[ ][X][ ]
+[ ][ ][ ]
+[ ][ ][ ]
+Game 2:Player 3 vs Player 0 (Player 0) starting
+Player 5 starting to play games...
+Game 2: Player 0: Picked [Row: 1, Col: 0]
+[ ][X][ ]
+[O][ ][ ]
+[ ][ ][ ]
+Player 7 starting to play games...
+Player 5 joining game 4 as 'O'
+Game 3: Player 8: Picked [Row: 1, Col: 2]
+[ ][ ][ ]
+[ ][ ][O]
+[ ][ ][X]
+Player 9 starting to play games...
+Player 9 joining game 5 as 'O'
+Player 7 joining game 4 as 'X'
+Game 4:Player 7 vs Player 5 (Player 7) starting
+Game 2: Player 3: Picked [Row: 2, Col: 0]
+[ ][X][ ]
+[O][ ][ ]
+[X][ ][ ]
+Game 4: Player 7: Picked [Row: 0, Col: 0]
+[X][ ][ ]
+[ ][ ][ ]
+[ ][ ][ ]
+Player 2 running
+Player 2 starting to play games...
+Player 2 joining game 5 as 'X'
+Game 5:Player 2 vs Player 9 (Player 2) starting
+Game 5: Player 2: Picked [Row: 1, Col: 0]
+[ ][ ][ ]
+[X][ ][ ]
+[ ][ ][ ]
+Game 2: Player 0: Picked [Row: 1, Col: 1]
+[ ][X][ ]
+[O][O][ ]
+[X][ ][ ]
+Game 2: Player 3: Picked [Row: 2, Col: 2]
+[ ][X][ ]
+[O][O][ ]
+[X][ ][X]
+Game 1: Player 1: Picked [Row: 1, Col: 1]
+[X][ ][ ]
+[ ][O][ ]
+[X][ ][O]
+Game 4:Player 7 vs Player 5 (Player 5) starting
+Game 2: Player 0: Picked [Row: 0, Col: 0]
+[O][X][ ]
+[O][O][ ]
+[X][ ][X]
+Game 3: Player 6: Picked [Row: 2, Col: 0]
+[ ][ ][ ]
+[ ][ ][O]
+[X][ ][X]
+Game 2: Player 3: Picked [Row: 0, Col: 2]
+[O][X][X]
+[O][O][ ]
+[X][ ][X]
+Game 2: Player 0: Picked [Row: 2, Col: 1]
+[O][X][X]
+[O][O][ ]
+[X][O][X]
+Game 1: Player 4: Picked [Row: 1, Col: 2]
+[X][ ][ ]
+[ ][O][X]
+[X][ ][O]
+Game 2: Player 3: Picked [Row: 1, Col: 2]
+Game 2:Player 3 - Won
+[O][X][X]
+[O][O][X]
+[X][O][X]
+Game 4: Player 5: Picked [Row: 1, Col: 0]
+[X][ ][ ]
+[O][ ][ ]
+[ ][ ][ ]
+Game 3: Player 8: Picked [Row: 0, Col: 0]
+Game 4: Player 7: Picked [Row: 2, Col: 2]
+[X][ ][ ]
+[O][ ][ ]
+[ ][ ][X]
+Game 1: Player 1: Picked [Row: 1, Col: 0]
+[X][ ][ ]
+[O][O][X]
+[X][ ][O]
+Game 2:Player 0 - Lost
+Game 1: Player 4: Picked [Row: 0, Col: 2]
+[X][ ][X]
+[O][O][X]
+[X][ ][O]
+Game 4: Player 5: Picked [Row: 0, Col: 1]
+[X][O][ ]
+[O][ ][ ]
+[ ][ ][X]
+[O][ ][ ]
+[ ][ ][O]
+[X][ ][X]
+Game 3: Player 6: Picked [Row: 1, Col: 0]
+[O][ ][ ]
+[X][ ][O]
+[X][ ][X]
+Game 3: Player 8: Picked [Row: 2, Col: 1]
+[O][ ][ ]
+[X][ ][O]
+[X][O][X]
+Game 5:Player 2 vs Player 9 (Player 9) starting
+Game 4: Player 7: Picked [Row: 1, Col: 2]
+[X][O][ ]
+[O][ ][X]
+[ ][ ][X]
+Game 5: Player 9: Picked [Row: 2, Col: 1]
+[ ][ ][ ]
+[X][ ][ ]
+[ ][O][ ]
+Game 4: Player 5: Picked [Row: 0, Col: 2]
+[X][O][O]
+[O][ ][X]
+[ ][ ][X]
+Game 5: Player 2: Picked [Row: 0, Col: 0]
+[X][ ][ ]
+[X][ ][ ]
+[ ][O][ ]
+Game 4: Player 7: Picked [Row: 2, Col: 1]
+[X][O][O]
+[O][ ][X]
+[ ][X][X]
+Game 5: Player 9: Picked [Row: 0, Col: 1]
+[X][O][ ]
+[X][ ][ ]
+[ ][O][ ]
+Game 4: Player 5: Picked [Row: 2, Col: 0]
+[X][O][O]
+[O][ ][X]
+[O][X][X]
+Game 1: Player 1: Picked [Row: 2, Col: 1]
+[X][ ][X]
+[O][O][X]
+[X][O][O]
+Game 3: Player 6: Picked [Row: 1, Col: 1]
+[O][ ][ ]
+[X][X][O]
+[X][O][X]
+Game 5: Player 2: Picked [Row: 2, Col: 2]
+[X][O][ ]
+[X][ ][ ]
+[ ][O][X]
+Game 3: Player 8: Picked [Row: 0, Col: 2]
+[O][ ][O]
+[X][X][O]
+[X][O][X]
+Game 5: Player 9: Picked [Row: 0, Col: 2]
+[X][O][O]
+[X][ ][ ]
+[ ][O][X]
+Game 1: Player 4: Picked [Row: 0, Col: 1]
+Game 1:Player 4 - Won
+[X][X][X]
+[O][O][X]
+[X][O][O]
+Game 5: Player 2: Picked [Row: 1, Col: 2]
+[X][O][O]
+[X][ ][X]
+[ ][O][X]
+Game 1:Player 1 - Lost
+Game 4: Player 7: Picked [Row: 1, Col: 1]
+Game 4:Player 7 - Won
+[X][O][O]
+[O][X][X]
+[O][X][X]
+Game 4:Player 5 - Lost
+Game 3: Player 6: Picked [Row: 0, Col: 1]
+[O][X][O]
+[X][X][O]
+[X][O][X]
+Game 3:Player 8 - Draw
+[O][X][O]
+[X][X][O]
+[X][O][X]
+Game 5: Player 9: Picked [Row: 1, Col: 1]
+Game 5:Player 9 - Won
+[X][O][O]
+[X][O][X]
+[ ][O][X]
+Game 3:Player 6 - Draw
+Game 5:Player 2 - Lost
+********* Player Results **********
+Player 0, Played 1 game(s), Won 0, Lost 1, Draw 0
+Player 1, Played 1 game(s), Won 0, Lost 1, Draw 0
+Player 2, Played 1 game(s), Won 0, Lost 1, Draw 0
+Player 3, Played 1 game(s), Won 1, Lost 0, Draw 0
+Player 4, Played 1 game(s), Won 1, Lost 0, Draw 0
+Player 5, Played 1 game(s), Won 0, Lost 1, Draw 0
+Player 6, Played 1 game(s), Won 0, Lost 0, Draw 1
+Player 7, Played 1 game(s), Won 1, Lost 0, Draw 0
+Player 8, Played 1 game(s), Won 0, Lost 0, Draw 1
+Player 9, Played 1 game(s), Won 1, Lost 0, Draw 0
+Total Players 10, Wins 4, Losses 4, Draws 1
+
+
+********* Game Results **********
+Game 1 - 'X' player 4, 'O' player 1, game result Won
+Game 2 - 'X' player 3, 'O' player 0, game result Won
+Game 3 - 'X' player 6, 'O' player 8, game result Draw
+Game 4 - 'X' player 7, 'O' player 5, game result Won
+Game 5 - 'X' player 2, 'O' player 9, game result Won
+Total Games = 5, 4 Games Won, 1 Games were a Draw
+
+
+Press Enter to continue
+ 
+--- Iteration 2 --- 
+..\x64\Debug\TicTacToe.exe starting 10 player(s) for 5 game(s)
+Player 8 waiting on starting gun
+Player 4 waiting on starting gun
+Player 3 waiting on starting gun
+Player 5 waiting on starting gun
+Player 6 waiting on starting gun
+Player 7 waiting on starting gun
+Player 0 waiting on starting gun
+Player 9 waiting on starting gun
+Player 1 waiting on starting gun
+Player 2 waiting on starting gun
+Player 4 running
+Player 4 starting to play games...
+Player 4 joining game 1 as 'O'
+Player 3 running
+Player 3 starting to play games...
+Player 3 joining game 1 as 'X'
+Game 1:Player 3 vs Player 4 (Player 3) starting
+Game 1: Player 3: Picked [Row: 0, Col: 2]
+[ ][ ][X]
+[ ][ ][ ]
+[ ][ ][ ]
+Player 5 running
+Player 5 starting to play games...
+Player 1 running
+Player 6 running
+Player 6 starting to play games...
+Player 9 running
+Player 7 running
+Player 7 starting to play games...
+Game 1:Player 3 vs Player 4 (Player 4) starting
+Player 1 starting to play games...
+Player 2 running
+Player 2 starting to play games...
+Player 7 joining game 3 as 'O'
+Player 9 starting to play games...
+Player 0 running
+Player 0 starting to play games...
+Player 0 joining game 5 as 'O'
+Player 8 running
+Player 8 starting to play games...
+Player 8 joining game 5 as 'X'
+Game 5:Player 8 vs Player 0 (Player 8) starting
+Game 1: Player 4: Picked [Row: 0, Col: 0]
+[O][ ][X]
+[ ][ ][ ]
+[ ][ ][ ]
+Player 2 joining game 4 as 'O'
+Game 5: Player 8: Picked [Row: 0, Col: 2]
+[ ][ ][X]
+[ ][ ][ ]
+[ ][ ][ ]
+Game 1: Player 3: Picked [Row: 1, Col: 0]
+[O][ ][X]
+[X][ ][ ]
+[ ][ ][ ]
+Game 5:Player 8 vs Player 0 (Player 0) starting
+Player 1 joining game 3 as 'X'
+Game 3:Player 1 vs Player 7 (Player 1) starting
+Player 9 joining game 4 as 'X'
+Game 3: Player 1: Picked [Row: 2, Col: 1]
+Game 5: Player 0: Picked [Row: 2, Col: 2]
+[ ][ ][X]
+[ ][ ][ ]
+[ ][ ][O]
+Game 4:Player 9 vs Player 2 (Player 9) starting
+[ ][ ][ ]
+[ ][ ][ ]
+[ ][X][ ]
+Game 1: Player 4: Picked [Row: 2, Col: 1]
+[O][ ][X]
+[X][ ][ ]
+[ ][O][ ]
+Game 4: Player 9: Picked [Row: 1, Col: 0]
+[ ][ ][ ]
+[X][ ][ ]
+[ ][ ][ ]
+Game 1: Player 3: Picked [Row: 1, Col: 1]
+[O][ ][X]
+[X][X][ ]
+[ ][O][ ]
+Game 3:Player 1 vs Player 7 (Player 7) starting
+Game 4:Player 9 vs Player 2 (Player 2) starting
+Player 5 joining game 2 as 'O'
+Game 5: Player 8: Picked [Row: 1, Col: 1]
+[ ][ ][X]
+[ ][X][ ]
+[ ][ ][O]
+Game 3: Player 7: Picked [Row: 1, Col: 1]
+Game 1: Player 4: Picked [Row: 0, Col: 1]
+[O][O][X]
+[X][X][ ]
+[ ][O][ ]
+[ ][ ][ ]
+[ ][O][ ]
+[ ][X][ ]
+Game 3: Player 1: Picked [Row: 1, Col: 0]
+[ ][ ][ ]
+[X][O][ ]
+[ ][X][ ]
+Game 3: Player 7: Picked [Row: 2, Col: 0]
+[ ][ ][ ]
+[X][O][ ]
+[O][X][ ]
+Game 5: Player 0: Picked [Row: 1, Col: 0]
+[ ][ ][X]
+[O][X][ ]
+[ ][ ][O]
+Game 5: Player 8: Picked [Row: 0, Col: 1]
+[ ][X][X]
+[O][X][ ]
+[ ][ ][O]
+Game 5: Player 0: Picked [Row: 1, Col: 2]
+[ ][X][X]
+[O][X][O]
+[ ][ ][O]
+Game 3: Player 1: Picked [Row: 0, Col: 2]
+[ ][ ][X]
+[X][O][ ]
+[O][X][ ]
+Player 6 joining game 2 as 'X'
+Game 2:Player 6 vs Player 5 (Player 6) starting
+Game 3: Player 7: Picked [Row: 0, Col: 1]
+[ ][O][X]
+[X][O][ ]
+[O][X][ ]
+Game 3: Player 1: Picked [Row: 2, Col: 2]
+[ ][O][X]
+[X][O][ ]
+[O][X][X]
+Game 3: Player 7: Picked [Row: 0, Col: 0]
+[O][O][X]
+[X][O][ ]
+[O][X][X]
+Game 5: Player 8: Picked [Row: 2, Col: 1]
+Game 5:Player 8 - Won
+[ ][X][X]
+[O][X][O]
+[ ][X][O]
+Game 3: Player 1: Picked [Row: 1, Col: 2]
+Game 3:Player 1 - Won
+[O][O][X]
+[X][O][X]
+[O][X][X]
+Game 5:Player 0 - Lost
+Game 4: Player 2: Picked [Row: 1, Col: 1]
+[ ][ ][ ]
+[X][O][ ]
+[ ][ ][ ]
+Game 4: Player 9: Picked [Row: 0, Col: 0]
+[X][ ][ ]
+[X][O][ ]
+[ ][ ][ ]
+Game 4: Player 2: Picked [Row: 2, Col: 1]
+[X][ ][ ]
+[X][O][ ]
+[ ][O][ ]
+Game 2: Player 6: Picked [Row: 0, Col: 1]
+Game 4: Player 9: Picked [Row: 0, Col: 1]
+[X][X][ ]
+[X][O][ ]
+[ ][O][ ]
+Game 4: Player 2: Picked [Row: 1, Col: 2]
+[X][X][ ]
+[X][O][O]
+[ ][O][ ]
+Game 3:Player 7 - Lost
+[ ][X][ ]
+[ ][ ][ ]
+[ ][ ][ ]
+Game 4: Player 9: Picked [Row: 2, Col: 0]
+Game 4:Player 9 - Won
+[X][X][ ]
+[X][O][O]
+[X][O][ ]
+Game 4:Player 2 - Lost
+Game 2:Player 6 vs Player 5 (Player 5) starting
+Game 2: Player 5: Picked [Row: 2, Col: 1]
+[ ][X][ ]
+[ ][ ][ ]
+[ ][O][ ]
+Game 2: Player 6: Picked [Row: 2, Col: 2]
+[ ][X][ ]
+[ ][ ][ ]
+[ ][O][X]
+Game 2: Player 5: Picked [Row: 0, Col: 0]
+[O][X][ ]
+[ ][ ][ ]
+[ ][O][X]
+Game 1: Player 3: Picked [Row: 2, Col: 0]
+Game 1:Player 3 - Won
+[O][O][X]
+[X][X][ ]
+[X][O][ ]
+Game 2: Player 6: Picked [Row: 2, Col: 0]
+[O][X][ ]
+[ ][ ][ ]
+[X][O][X]
+Game 1:Player 4 - Lost
+Game 2: Player 5: Picked [Row: 1, Col: 2]
+[O][X][ ]
+[ ][ ][O]
+[X][O][X]
+Game 2: Player 6: Picked [Row: 0, Col: 2]
+[O][X][X]
+[ ][ ][O]
+[X][O][X]
+Game 2: Player 5: Picked [Row: 1, Col: 1]
+[O][X][X]
+[ ][O][O]
+[X][O][X]
+Game 2: Player 6: Picked [Row: 1, Col: 0]
+[O][X][X]
+[X][O][O]
+[X][O][X]
+Game 2:Player 5 - Draw
+[O][X][X]
+[X][O][O]
+[X][O][X]
+Game 2:Player 6 - Draw
+********* Player Results **********
+Player 0, Played 1 game(s), Won 0, Lost 1, Draw 0
+Player 1, Played 1 game(s), Won 1, Lost 0, Draw 0
+Player 2, Played 1 game(s), Won 0, Lost 1, Draw 0
+Player 3, Played 1 game(s), Won 1, Lost 0, Draw 0
+Player 4, Played 1 game(s), Won 0, Lost 1, Draw 0
+Player 5, Played 1 game(s), Won 0, Lost 0, Draw 1
+Player 6, Played 1 game(s), Won 0, Lost 0, Draw 1
+Player 7, Played 1 game(s), Won 0, Lost 1, Draw 0
+Player 8, Played 1 game(s), Won 1, Lost 0, Draw 0
+Player 9, Played 1 game(s), Won 1, Lost 0, Draw 0
+Total Players 10, Wins 4, Losses 4, Draws 1
+
+
+********* Game Results **********
+Game 1 - 'X' player 3, 'O' player 4, game result Won
+Game 2 - 'X' player 6, 'O' player 5, game result Draw
+Game 3 - 'X' player 1, 'O' player 7, game result Won
+Game 4 - 'X' player 9, 'O' player 2, game result Won
+Game 5 - 'X' player 8, 'O' player 0, game result Won
+Total Games = 5, 4 Games Won, 1 Games were a Draw
+
+
+Press Enter to continue
+ 
+--- Iteration 3 --- 
+..\x64\Debug\TicTacToe.exe starting 10 player(s) for 5 game(s)
+Player 0 waiting on starting gun
+Player 3 waiting on starting gun
+Player 1 waiting on starting gun
+Player 4 waiting on starting gun
+Player 5 waiting on starting gun
+Player 8 waiting on starting gun
+Player 7 waiting on starting gun
+Player 6 waiting on starting gun
+Player 2 waiting on starting gun
+Player 9 waiting on starting gun
+Player 0 running
+Player 0 starting to play games...
+Player 0 joining game 1 as 'O'
+Player 4 running
+Player 4 starting to play games...
+Player 4 joining game 1 as 'X'
+Game 1:Player 4 vs Player 0 (Player 4) starting
+Player 9 running
+Player 9 starting to play games...
+Player 9 joining game 2 as 'O'
+Player 3 running
+Player 3 starting to play games...
+Player 3 joining game 2 as 'X'
+Game 2:Player 3 vs Player 9 (Player 3) starting
+Player 6 running
+Game 2: Player 3: Picked [Row: 1, Col: 0]
+[ ][ ][ ]
+[X][ ][ ]
+[ ][ ][ ]
+Player 8 running
+Player 8 starting to play games...
+Player 8 joining game 3 as 'O'
+Player 5 running
+Player 5 starting to play games...
+Player 2 running
+Player 2 starting to play games...
+Player 2 joining game 4 as 'O'
+Player 5 joining game 3 as 'X'
+Game 3:Player 5 vs Player 8 (Player 5) starting
+Player 1 running
+Player 1 starting to play games...
+Game 2:Player 3 vs Player 9 (Player 9) starting
+Game 1: Player 4: Picked [Row: 2, Col: 0]
+[ ][ ][ ]
+[ ][ ][ ]
+[X][ ][ ]
+Game 1:Player 4 vs Player 0 (Player 0) starting
+Game 1: Player 0: Picked [Row: 2, Col: 1]
+[ ][ ][ ]
+[ ][ ][ ]
+[X][O][ ]
+Player 7 running
+Player 7 starting to play games...
+Player 1 joining game 4 as 'X'
+Game 4:Player 1 vs Player 2 (Player 1) starting
+Player 7 joining game 5 as 'O'
+Game 4: Player 1: Picked [Row: 1, Col: 1]
+[ ][ ][ ]
+[ ][X][ ]
+[ ][ ][ ]
+Game 4:Player 1 vs Player 2 (Player 2) starting
+Game 2: Player 9: Picked [Row: 0, Col: 0]
+[O][ ][ ]
+[X][ ][ ]
+[ ][ ][ ]
+Game 3: Player 5: Picked [Row: 2, Col: 1]
+[ ][ ][ ]
+[ ][ ][ ]
+[ ][X][ ]
+Game 4: Player 2: Picked [Row: 2, Col: 1]
+[ ][ ][ ]
+[ ][X][ ]
+[ ][O][ ]
+Player 6 starting to play games...
+Player 6 joining game 5 as 'X'
+Game 5:Player 6 vs Player 7 (Player 6) starting
+Game 5: Player 6: Picked [Row: 1, Col: 0]
+[ ][ ][ ]
+[X][ ][ ]
+[ ][ ][ ]
+Game 5:Player 6 vs Player 7 (Player 7) starting
+Game 1: Player 4: Picked [Row: 1, Col: 2]
+[ ][ ][ ]
+[ ][ ][X]
+[X][O][ ]
+Game 5: Player 7: Picked [Row: 2, Col: 2]
+[ ][ ][ ]
+[X][ ][ ]
+[ ][ ][O]
+Game 2: Player 3: Picked [Row: 1, Col: 1]
+[O][ ][ ]
+[X][X][ ]
+[ ][ ][ ]
+Game 1: Player 0: Picked [Row: 0, Col: 1]
+[ ][O][ ]
+[ ][ ][X]
+[X][O][ ]
+Game 1: Player 4: Picked [Row: 0, Col: 0]
+[X][O][ ]
+[ ][ ][X]
+[X][O][ ]
+Game 3:Player 5 vs Player 8 (Player 8) starting
+Game 1: Player 0: Picked [Row: 0, Col: 2]
+[X][O][O]
+[ ][ ][X]
+[X][O][ ]
+Game 3: Player 8: Picked [Row: 2, Col: 0]
+[ ][ ][ ]
+[ ][ ][ ]
+[O][X][ ]
+Game 5: Player 6: Picked [Row: 0, Col: 0]
+Game 4: Player 1: Picked [Row: 0, Col: 2]
+[ ][ ][X]
+[ ][X][ ]
+[ ][O][ ]
+Game 3: Player 5: Picked [Row: 1, Col: 0]
+[ ][ ][ ]
+[X][ ][ ]
+[O][X][ ]
+Game 2: Player 9: Picked [Row: 0, Col: 1]
+[O][O][ ]
+[X][X][ ]
+[ ][ ][ ]
+Game 2: Player 3: Picked [Row: 0, Col: 2]
+[O][O][X]
+[X][X][ ]
+[ ][ ][ ]
+Game 4: Player 2: Picked [Row: 2, Col: 0]
+[ ][ ][X]
+[ ][X][ ]
+[O][O][ ]
+Game 2: Player 9: Picked [Row: 2, Col: 0]
+[O][O][X]
+[X][X][ ]
+[O][ ][ ]
+Game 4: Player 1: Picked [Row: 0, Col: 1]
+[ ][X][X]
+[ ][X][ ]
+[O][O][ ]
+Game 1: Player 4: Picked [Row: 1, Col: 0]
+Game 1:Player 4 - Won
+Game 3: Player 8: Picked [Row: 1, Col: 1]
+[ ][ ][ ]
+[X][O][ ]
+[O][X][ ]
+[X][O][O]
+[X][ ][X]
+[X][O][ ]
+Game 4: Player 2: Picked [Row: 1, Col: 2]
+[ ][X][X]
+[ ][X][O]
+[O][O][ ]
+Game 1:Player 0 - Lost
+Game 4: Player 1: Picked [Row: 2, Col: 2]
+[ ][X][X]
+[ ][X][O]
+[O][O][X]
+Game 2: Player 3: Picked [Row: 1, Col: 2]
+Game 2:Player 3 - Won
+[O][O][X]
+[X][X][X]
+[O][ ][ ]
+Game 4: Player 2: Picked [Row: 0, Col: 0]
+[O][X][X]
+[ ][X][O]
+[O][O][X]
+Game 3: Player 5: Picked [Row: 2, Col: 2]
+[ ][ ][ ]
+[X][O][ ]
+[O][X][X]
+Game 3: Player 8: Picked [Row: 0, Col: 2]
+Game 3:Player 8 - Won
+[ ][ ][O]
+[X][O][ ]
+[O][X][X]
+Game 3:Player 5 - Lost
+Game 4: Player 1: Picked [Row: 1, Col: 0]
+[O][X][X]
+[X][X][O]
+[O][O][X]
+Game 4:Player 2 - Draw
+[O][X][X]
+[X][X][O]
+[O][O][X]
+Game 4:Player 1 - Draw
+Game 2:Player 9 - Lost
+[X][ ][ ]
+[X][ ][ ]
+[ ][ ][O]
+Game 5: Player 7: Picked [Row: 2, Col: 1]
+[X][ ][ ]
+[X][ ][ ]
+[ ][O][O]
+Game 5: Player 6: Picked [Row: 2, Col: 0]
+Game 5:Player 6 - Won
+[X][ ][ ]
+[X][ ][ ]
+[X][O][O]
+Game 5:Player 7 - Lost
+********* Player Results **********
+Player 0, Played 1 game(s), Won 0, Lost 1, Draw 0
+Player 1, Played 1 game(s), Won 0, Lost 0, Draw 1
+Player 2, Played 1 game(s), Won 0, Lost 0, Draw 1
+Player 3, Played 1 game(s), Won 1, Lost 0, Draw 0
+Player 4, Played 1 game(s), Won 1, Lost 0, Draw 0
+Player 5, Played 1 game(s), Won 0, Lost 1, Draw 0
+Player 6, Played 1 game(s), Won 1, Lost 0, Draw 0
+Player 7, Played 1 game(s), Won 0, Lost 1, Draw 0
+Player 8, Played 1 game(s), Won 1, Lost 0, Draw 0
+Player 9, Played 1 game(s), Won 0, Lost 1, Draw 0
+Total Players 10, Wins 4, Losses 4, Draws 1
+
+
+********* Game Results **********
+Game 1 - 'X' player 4, 'O' player 0, game result Won
+Game 2 - 'X' player 3, 'O' player 9, game result Won
+Game 3 - 'X' player 5, 'O' player 8, game result Won
+Game 4 - 'X' player 1, 'O' player 2, game result Draw
+Game 5 - 'X' player 6, 'O' player 7, game result Won
+Total Games = 5, 4 Games Won, 1 Games were a Draw
+
+
+Press Enter to continue
+ 
+--- Iteration 4 --- 
+..\x64\Debug\TicTacToe.exe starting 10 player(s) for 5 game(s)
+Player 2 waiting on starting gun
+Player 6 waiting on starting gun
+Player 7 waiting on starting gun
+Player 8 waiting on starting gun
+Player 1 waiting on starting gun
+Player 3 waiting on starting gun
+Player 9 waiting on starting gun
+Player 4 waiting on starting gun
+Player 0 waiting on starting gun
+Player 5 waiting on starting gun
+Player 2 running
+Player 2 starting to play games...
+Player 2 joining game 1 as 'O'
+Player 5 running
+Player 5 starting to play games...
+Player 5 joining game 1 as 'X'
+Game 1:Player 5 vs Player 2 (Player 5) starting
+Game 1: Player 5: Picked [Row: 2, Col: 1]
+[ ][ ][ ]
+[ ][ ][ ]
+[ ][X][ ]
+Player 0 running
+Player 0 starting to play games...
+Player 0 joining game 2 as 'O'
+Player 9 running
+Player 9 starting to play games...
+Player 9 joining game 2 as 'X'
+Game 2:Player 9 vs Player 0 (Player 9) starting
+Player 3 running
+Player 1 running
+Player 1 starting to play games...
+Player 1 joining game 3 as 'O'
+Game 1:Player 5 vs Player 2 (Player 2) starting
+Game 1: Player 2: Picked [Row: 0, Col: 2]
+[ ][ ][O]
+[ ][ ][ ]
+[ ][X][ ]
+Game 2: Player 9: Picked [Row: 0, Col: 0]
+[X][ ][ ]
+[ ][ ][ ]
+[ ][ ][ ]
+Player 8 running
+Game 2:Player 9 vs Player 0 (Player 0) starting
+Game 2: Player 0: Picked [Row: 1, Col: 2]
+Player 3 starting to play games...
+Player 3 joining game 3 as 'X'
+Game 3:Player 3 vs Player 1 (Player 3) starting
+Game 3: Player 3: Picked [Row: 0, Col: 0]
+[X][ ][ ]
+[ ][ ][ ]
+[ ][ ][ ]
+Player 4 running
+Player 4 starting to play games...
+Player 4 joining game 4 as 'O'
+Game 3:Player 3 vs Player 1 (Player 1) starting
+Player 6 running
+Player 6 starting to play games...
+Player 7 running
+Game 1: Player 5: Picked [Row: 2, Col: 2]
+[ ][ ][O]
+[ ][ ][ ]
+[ ][X][X]
+Player 7 starting to play games...
+Player 7 joining game 5 as 'O'
+Game 1: Player 2: Picked [Row: 0, Col: 1]
+[ ][O][O]
+[ ][ ][ ]
+[ ][X][X]
+Player 8 starting to play games...
+Player 8 joining game 5 as 'X'
+Game 5:Player 8 vs Player 7 (Player 8) starting
+Game 1: Player 5: Picked [Row: 2, Col: 0]
+Game 1:Player 5 - Won
+[ ][O][O]
+[ ][ ][ ]
+[X][X][X]
+Game 5: Player 8: Picked [Row: 1, Col: 2]
+[ ][ ][ ]
+[ ][ ][X]
+[ ][ ][ ]
+[X][ ][ ]
+[ ][ ][O]
+[ ][ ][ ]
+Game 2: Player 9: Picked [Row: 2, Col: 1]
+[X][ ][ ]
+[ ][ ][O]
+[ ][X][ ]
+Game 3: Player 1: Picked [Row: 1, Col: 0]
+Game 2: Player 0: Picked [Row: 0, Col: 1]
+[X][O][ ]
+[ ][ ][O]
+[ ][X][ ]
+[X][ ][ ]
+[O][ ][ ]
+[ ][ ][ ]
+Game 2: Player 9: Picked [Row: 2, Col: 0]
+[X][O][ ]
+[ ][ ][O]
+[X][X][ ]
+Game 3: Player 3: Picked [Row: 2, Col: 2]
+[X][ ][ ]
+[O][ ][ ]
+[ ][ ][X]
+Game 5:Player 8 vs Player 7 (Player 7) starting
+Game 3: Player 1: Picked [Row: 2, Col: 0]
+Game 5: Player 7: Picked [Row: 1, Col: 0]
+[ ][ ][ ]
+[O][ ][X]
+[ ][ ][ ]
+[X][ ][ ]
+[O][ ][ ]
+[O][ ][X]
+Game 1:Player 2 - Lost
+Game 3: Player 3: Picked [Row: 1, Col: 1]
+Game 3:Player 3 - Won
+[X][ ][ ]
+[O][X][ ]
+[O][ ][X]
+Game 3:Player 1 - Lost
+Player 6 joining game 4 as 'X'
+Game 4:Player 6 vs Player 4 (Player 6) starting
+Game 4: Player 6: Picked [Row: 0, Col: 0]
+[X][ ][ ]
+[ ][ ][ ]
+[ ][ ][ ]
+Game 2: Player 0: Picked [Row: 1, Col: 0]
+[X][O][ ]
+[O][ ][O]
+[X][X][ ]
+Game 5: Player 8: Picked [Row: 2, Col: 1]
+[ ][ ][ ]
+[O][ ][X]
+[ ][X][ ]
+Game 2: Player 9: Picked [Row: 0, Col: 2]
+[X][O][X]
+[O][ ][O]
+[X][X][ ]
+Game 5: Player 7: Picked [Row: 0, Col: 2]
+[ ][ ][O]
+[O][ ][X]
+[ ][X][ ]
+Game 2: Player 0: Picked [Row: 1, Col: 1]
+Game 2:Player 0 - Won
+[X][O][X]
+[O][O][O]
+[X][X][ ]
+Game 5: Player 8: Picked [Row: 1, Col: 1]
+[ ][ ][O]
+[O][X][X]
+[ ][X][ ]
+Game 2:Player 9 - Lost
+Game 5: Player 7: Picked [Row: 0, Col: 1]
+[ ][O][O]
+[O][X][X]
+[ ][X][ ]
+Game 5: Player 8: Picked [Row: 0, Col: 0]
+[X][O][O]
+[O][X][X]
+[ ][X][ ]
+Game 4:Player 6 vs Player 4 (Player 4) starting
+Game 5: Player 7: Picked [Row: 2, Col: 2]
+[X][O][O]
+[O][X][X]
+[ ][X][O]
+Game 4: Player 4: Picked [Row: 1, Col: 1]
+[X][ ][ ]
+[ ][O][ ]
+[ ][ ][ ]
+Game 5: Player 8: Picked [Row: 2, Col: 0]
+[X][O][O]
+[O][X][X]
+[X][X][O]
+Game 5:Player 7 - Draw
+[X][O][O]
+[O][X][X]
+[X][X][O]
+Game 4: Player 6: Picked [Row: 0, Col: 2]
+[X][ ][X]
+[ ][O][ ]
+[ ][ ][ ]
+Game 5:Player 8 - Draw
+Game 4: Player 4: Picked [Row: 1, Col: 2]
+[X][ ][X]
+[ ][O][O]
+[ ][ ][ ]
+Game 4: Player 6: Picked [Row: 2, Col: 2]
+[X][ ][X]
+[ ][O][O]
+[ ][ ][X]
+Game 4: Player 4: Picked [Row: 2, Col: 1]
+[X][ ][X]
+[ ][O][O]
+[ ][O][X]
+Game 4: Player 6: Picked [Row: 0, Col: 1]
+Game 4:Player 6 - Won
+[X][X][X]
+[ ][O][O]
+[ ][O][X]
+Game 4:Player 4 - Lost
+********* Player Results **********
+Player 0, Played 1 game(s), Won 1, Lost 0, Draw 0
+Player 1, Played 1 game(s), Won 0, Lost 1, Draw 0
+Player 2, Played 1 game(s), Won 0, Lost 1, Draw 0
+Player 3, Played 1 game(s), Won 1, Lost 0, Draw 0
+Player 4, Played 1 game(s), Won 0, Lost 1, Draw 0
+Player 5, Played 1 game(s), Won 1, Lost 0, Draw 0
+Player 6, Played 1 game(s), Won 1, Lost 0, Draw 0
+Player 7, Played 1 game(s), Won 0, Lost 0, Draw 1
+Player 8, Played 1 game(s), Won 0, Lost 0, Draw 1
+Player 9, Played 1 game(s), Won 0, Lost 1, Draw 0
+Total Players 10, Wins 4, Losses 4, Draws 1
+
+
+********* Game Results **********
+Game 1 - 'X' player 5, 'O' player 2, game result Won
+Game 2 - 'X' player 9, 'O' player 0, game result Won
+Game 3 - 'X' player 3, 'O' player 1, game result Won
+Game 4 - 'X' player 6, 'O' player 4, game result Won
+Game 5 - 'X' player 8, 'O' player 7, game result Draw
+Total Games = 5, 4 Games Won, 1 Games were a Draw
+
+
+Press Enter to continue
+ 
+--- Iteration 5 --- 
+..\x64\Debug\TicTacToe.exe starting 10 player(s) for 5 game(s)
+Player 9 waiting on starting gun
+Player 4 waiting on starting gun
+Player 5 waiting on starting gun
+Player 6 waiting on starting gun
+Player 8 waiting on starting gun
+Player 1 waiting on starting gun
+Player 0 waiting on starting gun
+Player 7 waiting on starting gun
+Player 3 waiting on starting gun
+Player 2 waiting on starting gun
+Player 6 running
+Player 6 starting to play games...
+Player 6 joining game 1 as 'O'
+Player 4 running
+Player 4 starting to play games...
+Player 4 joining game 1 as 'X'
+Game 1:Player 4 vs Player 6 (Player 4) starting
+Game 1: Player 4: Picked [Row: 1, Col: 1]
+[ ][ ][ ]
+[ ][X][ ]
+[ ][ ][ ]
+Player 3 running
+Player 3 starting to play games...
+Player 5 running
+Player 3 joining game 2 as 'O'
+Player 0 running
+Player 8 running
+Player 8 starting to play games...
+Player 8 joining game 2 as 'X'
+Game 2:Player 8 vs Player 3 (Player 8) starting
+Game 2: Player 8: Picked [Row: 0, Col: 0]
+[X][ ][ ]
+[ ][ ][ ]
+[ ][ ][ ]
+Game 1:Player 4 vs Player 6 (Player 6) starting
+Game 1: Player 6: Picked [Row: 2, Col: 1]
+[ ][ ][ ]
+[ ][X][ ]
+[ ][O][ ]
+Player 0 starting to play games...
+Player 0 joining game 3 as 'O'
+Player 2 running
+Player 2 starting to play games...
+Player 2 joining game 3 as 'X'
+Game 3:Player 2 vs Player 0 (Player 2) starting
+Player 5 starting to play games...
+Player 7 running
+Player 7 starting to play games...
+Game 3: Player 2: Picked [Row: 2, Col: 2]
+[ ][ ][ ]
+[ ][ ][ ]
+[ ][ ][X]
+Player 7 joining game 4 as 'O'
+Game 1: Player 4: Picked [Row: 0, Col: 0]
+[X][ ][ ]
+[ ][X][ ]
+[ ][O][ ]
+Player 9 running
+Player 9 starting to play games...
+Player 9 joining game 5 as 'O'
+Game 2:Player 8 vs Player 3 (Player 3) starting
+Game 2: Player 3: Picked [Row: 2, Col: 0]
+[X][ ][ ]
+[ ][ ][ ]
+[O][ ][ ]
+Player 5 joining game 4 as 'X'
+Game 4:Player 5 vs Player 7 (Player 5) starting
+Game 2: Player 8: Picked [Row: 2, Col: 1]
+[X][ ][ ]
+[ ][ ][ ]
+[O][X][ ]
+Game 4: Player 5: Picked [Row: 2, Col: 2]
+[ ][ ][ ]
+[ ][ ][ ]
+[ ][ ][X]
+Game 1: Player 6: Picked [Row: 0, Col: 1]
+[X][O][ ]
+[ ][X][ ]
+[ ][O][ ]
+Player 1 running
+Player 1 starting to play games...
+Player 1 joining game 5 as 'X'
+Game 5:Player 1 vs Player 9 (Player 1) starting
+Game 4:Player 5 vs Player 7 (Player 7) starting
+Game 5: Player 1: Picked [Row: 0, Col: 0]
+[X][ ][ ]
+[ ][ ][ ]
+[ ][ ][ ]
+Game 4: Player 7: Picked [Row: 1, Col: 2]
+[ ][ ][ ]
+[ ][ ][O]
+[ ][ ][X]
+Game 4: Player 5: Picked [Row: 1, Col: 1]
+[ ][ ][ ]
+[ ][X][O]
+[ ][ ][X]
+Game 2: Player 3: Picked [Row: 0, Col: 1]
+Game 4: Player 7: Picked [Row: 1, Col: 0]
+[ ][ ][ ]
+[O][X][O]
+[ ][ ][X]
+[X][O][ ]
+[ ][ ][ ]
+[O][X][ ]
+Game 2: Player 8: Picked [Row: 2, Col: 2]
+[X][O][ ]
+[ ][ ][ ]
+[O][X][X]
+Game 3:Player 2 vs Player 0 (Player 0) starting
+Game 3: Player 0: Picked [Row: 0, Col: 2]
+[ ][ ][O]
+[ ][ ][ ]
+[ ][ ][X]
+Game 4: Player 5: Picked [Row: 0, Col: 2]
+[ ][ ][X]
+[O][X][O]
+[ ][ ][X]
+Game 1: Player 4: Picked [Row: 2, Col: 0]
+[X][O][ ]
+[ ][X][ ]
+[X][O][ ]
+Game 5:Player 1 vs Player 9 (Player 9) starting
+Game 5: Player 9: Picked [Row: 2, Col: 0]
+[X][ ][ ]
+[ ][ ][ ]
+[O][ ][ ]
+Game 4: Player 7: Picked [Row: 0, Col: 1]
+[ ][O][X]
+[O][X][O]
+[ ][ ][X]
+Game 1: Player 6: Picked [Row: 1, Col: 0]
+[X][O][ ]
+[O][X][ ]
+[X][O][ ]
+Game 2: Player 3: Picked [Row: 1, Col: 0]
+[X][O][ ]
+[O][ ][ ]
+[O][X][X]
+Game 2: Player 8: Picked [Row: 1, Col: 1]
+Game 2:Player 8 - Won
+[X][O][ ]
+[O][X][ ]
+[O][X][X]
+Game 2:Player 3 - Lost
+Game 5: Player 1: Picked [Row: 2, Col: 2]
+[X][ ][ ]
+[ ][ ][ ]
+[O][ ][X]
+Game 3: Player 2: Picked [Row: 1, Col: 1]
+[ ][ ][O]
+[ ][X][ ]
+[ ][ ][X]
+Game 4: Player 5: Picked [Row: 2, Col: 1]
+[ ][O][X]
+[O][X][O]
+[ ][X][X]
+Game 3: Player 0: Picked [Row: 0, Col: 0]
+[O][ ][O]
+[ ][X][ ]
+[ ][ ][X]
+Game 1: Player 4: Picked [Row: 1, Col: 2]
+[X][O][ ]
+[O][X][X]
+[X][O][ ]
+Game 3: Player 2: Picked [Row: 1, Col: 2]
+Game 1: Player 6: Picked [Row: 0, Col: 2]
+[X][O][O]
+[O][X][X]
+[X][O][ ]
+[O][ ][O]
+[ ][X][X]
+[ ][ ][X]
+Game 3: Player 0: Picked [Row: 2, Col: 0]
+[O][ ][O]
+[ ][X][X]
+[O][ ][X]
+Game 3: Player 2: Picked [Row: 1, Col: 0]
+Game 3:Player 2 - Won
+[O][ ][O]
+[X][X][X]
+[O][ ][X]
+Game 4: Player 7: Picked [Row: 0, Col: 0]
+[O][O][X]
+[O][X][O]
+[ ][X][X]
+Game 5: Player 9: Picked [Row: 1, Col: 0]
+[X][ ][ ]
+[O][ ][ ]
+[O][ ][X]
+Game 3:Player 0 - Lost
+Game 1: Player 4: Picked [Row: 2, Col: 2]
+Game 1:Player 4 - Won
+[X][O][O]
+[O][X][X]
+[X][O][X]
+Game 1:Player 6 - Lost
+Game 4: Player 5: Picked [Row: 2, Col: 0]
+Game 4:Player 5 - Won
+[O][O][X]
+[O][X][O]
+[X][X][X]
+Game 5: Player 1: Picked [Row: 1, Col: 1]
+Game 5:Player 1 - Won
+[X][ ][ ]
+[O][X][ ]
+[O][ ][X]
+Game 4:Player 7 - Lost
+Game 5:Player 9 - Lost
+********* Player Results **********
+Player 0, Played 1 game(s), Won 0, Lost 1, Draw 0
+Player 1, Played 1 game(s), Won 1, Lost 0, Draw 0
+Player 2, Played 1 game(s), Won 1, Lost 0, Draw 0
+Player 3, Played 1 game(s), Won 0, Lost 1, Draw 0
+Player 4, Played 1 game(s), Won 1, Lost 0, Draw 0
+Player 5, Played 1 game(s), Won 1, Lost 0, Draw 0
+Player 6, Played 1 game(s), Won 0, Lost 1, Draw 0
+Player 7, Played 1 game(s), Won 0, Lost 1, Draw 0
+Player 8, Played 1 game(s), Won 1, Lost 0, Draw 0
+Player 9, Played 1 game(s), Won 0, Lost 1, Draw 0
+Total Players 10, Wins 5, Losses 5, Draws 0
+
+
+********* Game Results **********
+Game 1 - 'X' player 4, 'O' player 6, game result Won
+Game 2 - 'X' player 8, 'O' player 3, game result Won
+Game 3 - 'X' player 2, 'O' player 0, game result Won
+Game 4 - 'X' player 5, 'O' player 7, game result Won
+Game 5 - 'X' player 1, 'O' player 9, game result Won
+Total Games = 5, 5 Games Won, 0 Games were a Draw
+
+
+Press Enter to continue
+ 
