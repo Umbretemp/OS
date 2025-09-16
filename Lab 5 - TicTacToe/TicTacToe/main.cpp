@@ -571,6 +571,11 @@ void PlayerThreadEntrypoint(Player *currentPlayer)
 	//     then you probably let main 'fire' the gun (via notify) before you were waiting on it.
 	//
 	///////////////////////////////////////////////////////////////////////////////////
+	{
+		std::unique_lock<std::mutex> lock(currentPlayer->playerPool->playerMutex);
+		currentPlayer->playerPool->runningPlayerCount++;
+		currentPlayer->playerPool->startingGun.wait(lock, [&] { return currentPlayer->playerPool->gunFired; });
+	}
 
 	// Attempt to play each game, all of the game logic will occur in this function
 	printf("Player %d running\n", currentPlayer->id);
@@ -581,6 +586,9 @@ void PlayerThreadEntrypoint(Player *currentPlayer)
 	//   playerPool to notify main of this change. The logic here will be similar, but
 	//   opposite, to what you did in the first TODO of this function.
 	///////////////////////////////////////////////////////////////////////////////////
+	{
+
+	}
 }
 
 ///////////////////////////////////////////////////////////////////////////////////
@@ -736,6 +744,7 @@ int main(int argc, char **argv)
 	for (int i = 0; i < totalPlayerCount; i++)
 	{
 		std::thread(PlayerThreadEntrypoint, &perPlayerData[i]).detach();
+		// threadcounter?
 	}
 
 	///////////////////////////////////////////////////////////////////////////////////
