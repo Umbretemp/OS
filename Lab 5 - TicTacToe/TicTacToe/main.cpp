@@ -285,6 +285,7 @@ void PrintGameBoard(const Game *currentGame)
 	// This portion of the lab requires you to write the LogSync and Log functions. Get
 	//   your threads running and shutting down before attempting these functions.
 	///////////////////////////////////////////////////////////////////////////////////
+	LogSync(LogSyncOperation::Lock);
 	for (int row = 0; row < 3; row++)
 	{
 		for(int col = 0; col < 3; col++)
@@ -301,6 +302,7 @@ void PrintGameBoard(const Game *currentGame)
 		}
 		printf("\n");
 	}
+	LogSync(LogSyncOperation::Unlock);
 }
 
 ///////////////////////////////////////////////////////////////////////////////////
