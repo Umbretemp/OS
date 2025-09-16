@@ -8,6 +8,7 @@
 #include <vector>
 #include <random>
 #include <future>
+#include <varargs.h>
 
 
 
@@ -160,6 +161,11 @@ struct PlayerPool
 	// TODO:: You will need to add variables here to keep track of the total number of
 	//   player threads in a thread-safe manner and implement the starting gun logic.
 	///////////////////////////////////////////////////////////////////////////////////
+	std::mutex playerMutex;
+	std::condition_variable startingGun;
+	std::condition_variable allPlayersDone;
+	int runningPlayerCount;
+	bool gunFired;
 };
 
 ///////////////////////////////////////////////////////////////////////////////////
@@ -693,6 +699,8 @@ int main(int argc, char **argv)
 	///////////////////////////////////////////////////////////////////////////////////
 	// TODO:: Initialize your data in the pool of players
 	///////////////////////////////////////////////////////////////////////////////////
+	poolOfPlayers.runningPlayerCount = 0;
+	poolOfPlayers.gunFired = false;
 
 
 	// Initialize each game
@@ -743,6 +751,8 @@ int main(int argc, char **argv)
 	///////////////////////////////////////////////////////////////////////////////////
 	// TODO:: Cleanup
 	///////////////////////////////////////////////////////////////////////////////////
+	delete[] perGameData;
+	delete[] perPlayerData;
 
 	Pause();
 	return 0;
