@@ -491,6 +491,7 @@ void JoinGame(Player *currentPlayer, Game *currentGame)
 		// TODO:: We're the only player in the game right now so we need to wait for the 
 		//   other player to join the game and play it's turn.
 		///////////////////////////////////////////////////////////////////////////////////
+		currentGame->gameCondition.wait(*currentGame->gameUniqueLock);
 	}
 	else 
 	{
