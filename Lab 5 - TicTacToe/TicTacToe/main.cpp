@@ -207,6 +207,19 @@ void LogSync(LogSyncOperation operationToPerform)
 	//
 	//  NOTE: For this function you MAY use static to create your mutex
 	///////////////////////////////////////////////////////////////////////////////////
+	static std::mutex logMutex;
+	switch (operationToPerform)
+	{
+	case LogSyncOperation::Init: // initalize none static
+	case LogSyncOperation::Release: // clean up none static
+		break;
+	case LogSyncOperation::Lock:
+		logMutex.lock();
+		break;
+	case LogSyncOperation::Unlock:
+		logMutex.unlock();
+		break;
+	}
 }
 
 ///////////////////////////////////////////////////////////////////////////////////
@@ -245,6 +258,12 @@ int Log(const char *format, ...)
 	//	 Once this function is complete it should be used in place of all printf calls
 	//   (except in the Pause and PrintGameBoard functions).
 	///////////////////////////////////////////////////////////////////////////////////
+	LogSync(LogSyncOperation::Lock);
+	va_list args;
+	va_start(args, format);
+	result = vprintf(format, args);
+	va_end(args);
+	LogSync(LogSyncOperation::Unlock);
 
 	return result;
 }
