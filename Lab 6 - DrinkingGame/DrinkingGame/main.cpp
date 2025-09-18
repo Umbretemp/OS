@@ -299,6 +299,13 @@ void StartDrinker(Drinker *currentDrinker)
 	while(true)
 	{
 		TryToDrink(currentDrinker);
+
+		bool shouldStop = false;
+		//scope
+		{
+			std::lock_guard<std::mutex> lock(currentDrinker->drinkerPool->drinkerCountMutex);
+			shouldStop = currentDrinker->drinkerPool->stopDrinkingFlag;
+		}
 		
 		if(currentDrinker->drinkerPool->stopDrinkingFlag)
 		{
@@ -324,12 +331,30 @@ void DrinkerThreadEntrypoint(Drinker *currentDrinker)
 	// TODO:: Let main know there's one more drinker thread running then wait for a notification
 	//   from main via the DrinkerPool struct.
 	////////////////////////////////////////////////////////////////////////////////////////////////
+	// this t ready
+	{
+		std::lock_guard<std::mutex> lock(drinkerPool->drinkerCountMutex);
+		drinkerPool->readyCount++;
+		drinkerPool->drinkerCountCondition.notify_one(); // just main
+	}
+
+	// stating gun wait
+	{
+		std::unique_lock<std::mutex> lock(drinkerPool->startingGunMutex);
+		drinkerPool->startingGunCondition.wait(lock, [drinkerPool] { return drinkerPool->startingGunFlag; });
+	}
 
 	StartDrinker(currentDrinker);
 
 	///////////////////////////////////////////////////////////////////////////////////
 	// TODO:: Let main know there's one less drinker thread running. 
 	///////////////////////////////////////////////////////////////////////////////////
+	// this t completed
+	{
+		std::lock_guard<std::mutex> lock(drinkerPool->drinkerCountMutex);
+		drinkerPool->readyCount--;
+		drinkerPool->drinkerCountCondition.notify_one(); // just main
+	}
 
 	return;
 }
