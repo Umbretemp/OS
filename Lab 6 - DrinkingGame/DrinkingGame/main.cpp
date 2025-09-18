@@ -253,12 +253,33 @@ bool TryToGetResources(Drinker *currentDrinker)
 	//		resources until you find one that works or you've checked them all.
 	///////////////////////////////////////////////////////////////////////////////////
 
-	ResourceType neededType = (firstResource->type == ResourceType::bottle) ? ResourceType::Opener : ResourceType::Bottle;
+	ResourceType neededType = (firstResource->type == ResourceType::Bottle) ? ResourceType::Opener : ResourceType::Bottle;
 
 	for (int i = 0; i < totalResources; i++)
 	{
 		// need second resource
+		Resource* secondResource = &currentDrinker->resourcePool->resources[i];
 
+		if (secondResource->id == firstResource->id)
+			continue; // skip if -> to each other
+
+		if (secondResource->type == neededType)
+		{
+			currentDrinker->resourceTryCount++;
+			// attempt drink
+			if (secondResource->resourceMutex.try_lock());
+			{
+				// can drink
+				secondResource->lockCount++;
+				
+				if (secondResource->type == ResourceType::Bottle)
+					currentDrinker->bottle = secondResource;
+				else // opener
+					currentDrinker->opener = secondResource;
+
+				return true; // exit condition
+			}
+		}
 	}
 
 	// failed to get second resource
