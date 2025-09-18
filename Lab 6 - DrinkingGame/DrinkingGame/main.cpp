@@ -6,6 +6,7 @@
 #include <vector>
 #include <mutex>
 #include <condition_variable>
+#include <thread>
 
 // Include file and line numbers for memory leak detection for visual studio in debug mode
 #if defined _MSC_VER && defined _DEBUG
@@ -267,7 +268,7 @@ bool TryToGetResources(Drinker *currentDrinker)
 		{
 			currentDrinker->resourceTryCount++;
 			// attempt drink
-			if (secondResource->resourceMutex.try_lock());
+			if (secondResource->resourceMutex.try_lock())
 			{
 				// can drink
 				secondResource->lockCount++;
@@ -277,6 +278,8 @@ bool TryToGetResources(Drinker *currentDrinker)
 				else // opener
 					currentDrinker->opener = secondResource;
 
+				//currentDrinker->resourcePool->resources->resourceMutex.unlock();
+
 				return true; // exit condition
 			}
 		}
@@ -285,9 +288,9 @@ bool TryToGetResources(Drinker *currentDrinker)
 	// failed to get second resource
 	firstResource->resourceMutex.unlock();
 	if (firstResource->type == ResourceType::Bottle)
-		currentDrinker->bottle == nullptr;
+		currentDrinker->bottle = nullptr;
 	else // opener
-		currentDrinker->opener == nullptr;
+		currentDrinker->opener = nullptr;
 	
 	return false;
 }
@@ -342,11 +345,9 @@ void StartDrinker(Drinker *currentDrinker)
 			std::lock_guard<std::mutex> lock(currentDrinker->drinkerPool->drinkerCountMutex);
 			shouldStop = currentDrinker->drinkerPool->stopDrinkingFlag;
 		}
-		
-		if(currentDrinker->drinkerPool->stopDrinkingFlag)
-		{
+
+		if (shouldStop)
 			break;
-		}
 	}
 }
 
