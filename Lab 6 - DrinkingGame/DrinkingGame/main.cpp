@@ -1,6 +1,11 @@
 ///////////////////////////////////////////////////////////////////////////////////
 // TODO:: #include any needed files
 ///////////////////////////////////////////////////////////////////////////////////
+#include <iostream>
+#include <random>
+#include <vector>
+#include <mutex>
+#include <condition_variable>
 
 // Include file and line numbers for memory leak detection for visual studio in debug mode
 #if defined _MSC_VER && defined _DEBUG
@@ -445,17 +450,33 @@ int main(int argc, char **argv)
 	///////////////////////////////////////////////////////////////////////////////////
 	// TODO:: Create detached drinker threads
 	///////////////////////////////////////////////////////////////////////////////////
+	for (int i = 0; i < drinkerCount; i++)
+	{
+		std::thread t(DrinkerThreadEntrypoint, &poolOfDrinkers.drinkers[i]);
+		t.detach();
+	}
 
 	///////////////////////////////////////////////////////////////////////////////////
 	// TODO:: Wait for all drinkers to be ready. You may not use a spinlock here, you
 	//   must wait for changes in the pool of drinkers to avoid burning CPU cycles.
 	///////////////////////////////////////////////////////////////////////////////////
+	// scope
+	{
+		std::unique_lock<std::mutex> lock(poolOfDrinkers.drinkerCountMutex);
+		poolOfDrinkers.drinkerCountCondition.wait(lock, [&poolOfDrinkers] { return poolOfDrinkers.readyCount == poolOfDrinkers.totalDrinkers; });
+	}
 
 	printf("Main: Firing gun\n");
 
 	///////////////////////////////////////////////////////////////////////////////////
 	// TODO:: Start all of the drinkers. All of the drinkers must be ready by this point. 
 	///////////////////////////////////////////////////////////////////////////////////
+	// scope
+	{
+		std::lock_guard<std::mutex> lock(poolOfDrinkers.startingGunMutex);
+		poolOfDrinkers.startingGunFlag = true;
+	}
+	poolOfDrinkers.startingGunCondition.notify_all();
 
 	// Wait for user input before telling the drinkers to stop
 	Pause();
@@ -465,17 +486,29 @@ int main(int argc, char **argv)
 	//   You may only set the stop drinking flag once here and it must be in a thread
 	//   safe manner.
 	///////////////////////////////////////////////////////////////////////////////////
+	// scope
+	{
+		std::lock_guard<std::mutex> lock(poolOfDrinkers.drinkerCountMutex);
+		poolOfDrinkers.stopDrinkingFlag = true;
+	}
 
 	///////////////////////////////////////////////////////////////////////////////////
 	// TODO:: Wait for all drinkers to finish. You may not use a spinlock here, you
 	//   must wait for changes in the pool of drinkers to avoid burning CPU cycles.
 	///////////////////////////////////////////////////////////////////////////////////
+	// scope
+	{
+		std::unique_lock<std::mutex> lock(poolOfDrinkers.drinkerCountMutex);
+		poolOfDrinkers.drinkerCountCondition.wait(lock, [&poolOfDrinkers] { return poolOfDrinkers.readyCount == 0; });
+	}
 
 	PrintResults(poolOfDrinkers, poolOfResources);
 
 	///////////////////////////////////////////////////////////////////////////////////
 	// TODO:: Clean up.
 	///////////////////////////////////////////////////////////////////////////////////
+	delete[] poolOfDrinkers.drinkers;
+	delete[] poolOfResources.resources;
 
 	Pause();
 	return 0;
