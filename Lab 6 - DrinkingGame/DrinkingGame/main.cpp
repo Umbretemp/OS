@@ -253,6 +253,21 @@ bool TryToGetResources(Drinker *currentDrinker)
 	//		resources until you find one that works or you've checked them all.
 	///////////////////////////////////////////////////////////////////////////////////
 
+	ResourceType neededType = (firstResource->type == ResourceType::bottle) ? ResourceType::Opener : ResourceType::Bottle;
+
+	for (int i = 0; i < totalResources; i++)
+	{
+		// need second resource
+
+	}
+
+	// failed to get second resource
+	firstResource->resourceMutex.unlock();
+	if (firstResource->type == ResourceType::Bottle)
+		currentDrinker->bottle == nullptr;
+	else // opener
+		currentDrinker->opener == nullptr;
+	
 	return false;
 }
 
