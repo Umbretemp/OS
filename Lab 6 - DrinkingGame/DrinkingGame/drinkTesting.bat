@@ -16,7 +16,7 @@ if "%4"=="" (
 
 REM --               Configuration Section                     --
 REM ------------------------------------------------------------------
-set EXECUTABLE=DrinkingGame.exe
+set EXECUTABLE=..\x64\Debug\DrinkingGame.exe
 set drinkerCount=%1
 set bottleCount=%2
 set openerCount=%3

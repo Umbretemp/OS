@@ -1,0 +1,49 @@
+Running Automated Drinking Game Test... 
+Command: ..\x64\Debug\DrinkingGame.exe 10 0 1 
+Iterations: 1 
+ 
+--- Iteration 1 --- 
+..\x64\Debug\DrinkingGame.exe starting 10 drinker(s), 0 bottle(s), 1 opener(s)
+Drinker 2, is ready to start
+Drinker 4, is ready to start
+Drinker 5, is ready to start
+Drinker 6, is ready to start
+Drinker 7, is ready to start
+Drinker 8, is ready to start
+Drinker 9, is ready to start
+Drinker 1, is ready to start
+Drinker 0, is ready to start
+Drinker 3, is ready to start
+Main: Firing gun
+Drinker 3, starting
+Drinker 7, starting
+Press Enter to continue
+Drinker 6, starting
+Drinker 4, starting
+Drinker 0, starting
+Drinker 9, starting
+Drinker 2, starting
+Drinker 1, starting
+Drinker 8, starting
+Drinker 5, starting
+*********Drinkers**********
+Drinker 0, Drank 0, 1 tries
+Drinker 1, Drank 0, 1 tries
+Drinker 2, Drank 0, 1 tries
+Drinker 3, Drank 0, 155 tries
+Drinker 4, Drank 0, 2 tries
+Drinker 5, Drank 0, 1 tries
+Drinker 6, Drank 0, 16 tries
+Drinker 7, Drank 0, 64 tries
+Drinker 8, Drank 0, 1 tries
+Drinker 9, Drank 0, 1 tries
+Total Drinkers 10, Drinks 0, Resource tries 243
+
+
+*********Resource Results **********
+Resource 0 - type:opener , locked 243, used 0
+Total Resources = 1, 0 use count, 243 locked count
+
+
+Press Enter to continue
+ 
