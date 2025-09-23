@@ -44,6 +44,9 @@ echo Command: %EXECUTABLE% %ARGS% >> %OUTPUT_FILE%
 echo Iterations: %ITERATIONS% >> %OUTPUT_FILE%
 echo. >> %OUTPUT_FILE%
 
+REM -- used to track variation of time between completion
+set START_TIME=%TIME%
+
 for /L %%i in (1, 1, %ITERATIONS%) do (
     echo --- Iteration %%i --- >> %OUTPUT_FILE%
     
@@ -53,6 +56,12 @@ for /L %%i in (1, 1, %ITERATIONS%) do (
     (echo.) | %EXECUTABLE% %ARGS% >> %OUTPUT_FILE% 2>>&1    
     echo. >> %OUTPUT_FILE%
 )
+
+REM -- formating and calculation of time passed after program completed
+set END_TIME=%TIME%
+echo. >> %OUTPUT_FILE%
+echo --- TIMING RESULTS --- >> %OUTPUT_FILE%
+powershell -Command "$ts = New-TimeSpan -Start '%START_TIME%' -End '%END_TIME%'; Write-Output ('{0:00}:{1:00}.{2:000}' -f $ts.Minutes, $ts.Seconds, $ts.Milliseconds)" >> %OUTPUT_FILE%
 
 echo.
 echo Test complete.
