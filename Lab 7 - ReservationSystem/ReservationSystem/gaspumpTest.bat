@@ -16,7 +16,7 @@ if "%4"=="" (
     set carCount=10
     set pumpCount=2
     set testTime=30
-    set ITERATIONS=5
+    set ITERATIONS=1
 ) else (
     echo Using command-line arguments.
     echo.
