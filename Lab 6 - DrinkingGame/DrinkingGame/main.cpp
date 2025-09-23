@@ -553,6 +553,7 @@ int main(int argc, char **argv)
 		std::lock_guard<std::mutex> lock(poolOfDrinkers.drinkerCountMutex);
 		poolOfDrinkers.stopDrinkingFlag = true;
 	}
+	poolOfDrinkers.startingGunCondition.notify_all();
 
 	///////////////////////////////////////////////////////////////////////////////////
 	// TODO:: Wait for all drinkers to finish. You may not use a spinlock here, you
