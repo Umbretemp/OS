@@ -67,10 +67,11 @@ int Station::fillUp()
 				stationMutex->unlock();
 
 				// 5) number of cars, number of pumps, how long a single car takes to fill up
+				if (carsInStation > 1 ) // exicute if more than 1 car
 				{
 					// -1 for this
 					int carsFilling = (((carsInStation-1) + (pumpsInStation - 1)) / pumpsInStation);
-					std::this_thread::sleep_for(std::chrono::milliseconds(carsFilling * 30)); // 30 ms pump.cpp
+					std::this_thread::sleep_for(std::chrono::milliseconds(carsFilling * 30)); // 30ms pump.cpp
 				}
 				
 				return 1;
@@ -80,7 +81,7 @@ int Station::fillUp()
 		}
 
 		// No pumps found, wait for tbd before trying again
-		std::this_thread::sleep_for(std::chrono::milliseconds(5));
+		std::this_thread::sleep_for(std::chrono::milliseconds(30)); // 30ms pump.cpp
 	}
 
 	// will never reach
