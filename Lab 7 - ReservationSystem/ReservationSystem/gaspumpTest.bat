@@ -11,14 +11,19 @@ REM ------------------------------------------------------------------
 
 REM -- Input Validation: Check if all 4 arguments were provided --
 if "%4"=="" (
-    echo Error: Missing arguments.
+    echo No arguments provided, using default values.
     echo.
-    echo Usage: %0 [carCount] [pumpCount] [testTime] [ITERATIONS]
-    echo running: %0 10 2 30 1
     set carCount=10
     set pumpCount=2
     set testTime=30
-    set ITERATIONS=1
+    set ITERATIONS=5
+) else (
+    echo Using command-line arguments.
+    echo.
+    set carCount=%1
+    set pumpCount=%2
+    set testTime=%3
+    set ITERATIONS=%4
 )
 
 REM -- IMPORTANT: You may need to change this path to match your project's output directory.
