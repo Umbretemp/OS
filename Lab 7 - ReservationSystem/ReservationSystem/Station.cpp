@@ -52,9 +52,9 @@ int Station::fillUp()
 
 	while (true)
 	{
+			stationMutex->lock();
 		for (int i = 0; i < pumpsInStation; i++)
 		{
-			stationMutex->lock();
 			if ((freeMask & (1 << i)) == 0) // is pump free
 			{
 				freeMask |= (1 << i); // in use
@@ -77,8 +77,9 @@ int Station::fillUp()
 				return 1;
 			}
 			// milsec of not checking ?? durring incrementing
-			stationMutex->unlock();
+			//stationMutex->unlock(); // very slow
 		}
+		stationMutex->unlock(); // ERRORS
 
 		// No pumps found, wait for tbd before trying again
 		// lower to 5 is resulting in longer app time till complete
