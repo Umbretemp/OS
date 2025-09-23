@@ -52,7 +52,7 @@ int Station::fillUp()
 
 	while (true)
 	{
-			stationMutex->lock();
+		stationMutex->lock();
 		for (int i = 0; i < pumpsInStation; i++)
 		{
 			if ((freeMask & (1 << i)) == 0) // is pump free
