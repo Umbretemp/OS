@@ -49,6 +49,23 @@ int Station::fillUp()
 	//   variables UNLESS it's required by your algorithm for #5 above.
 	/////////////////////////////////////////////////////////////////////////////////////////////
 
+	for (int i = 0; i < pumpsInStation; i++)
+	{
+		stationMutex->lock();
+		if ((freeMask & (1 << i)) == 0) // is pump free
+		{
+			freeMask |= (1 << i); // in use
+			stationMutex->unlock();
+
+			pumps[i].fillTankUp();
+			stationMutex->lock();
+			freeMask &= ~(1 << i); // free
+			stationMutex->unlock();
+			
+		}
+
+	}
+
 	return 0;
 }
 
