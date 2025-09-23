@@ -1,0 +1,28 @@
+Running Automated Gas Station Test... 
+ 
+Configuration: 
+ - Cars: 10 
+ - Pumps: 2 
+ - Time (sec): 30 
+ 
+Command: ..\x64\Debug\ReservationSystem.exe 10 2 30 
+Iterations: 1 
+ 
+--- Iteration 1 --- 
+Running Gas Station, using 10 cars, using 2 pumps
+Cars:
+  car # 0, Fill count 143, Try count 143
+  car # 1, Fill count 140, Try count 140
+  car # 2, Fill count 138, Try count 138
+  car # 3, Fill count 136, Try count 136
+  car # 4, Fill count 138, Try count 138
+  car # 5, Fill count 137, Try count 137
+  car # 6, Fill count 137, Try count 137
+  car # 7, Fill count 134, Try count 134
+  car # 8, Fill count 137, Try count 137
+  car # 9, Fill count 135, Try count 135
+Station:
+  Pump 0, Fill count 716
+  Pump 1, Fill count 659
+Press Enter to continue
+ 
