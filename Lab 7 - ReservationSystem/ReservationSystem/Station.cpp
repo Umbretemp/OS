@@ -76,12 +76,13 @@ int Station::fillUp()
 				
 				return 1;
 			}
-			// milsec of not checking ??
+			// milsec of not checking ?? durring incrementing
 			stationMutex->unlock();
 		}
 
 		// No pumps found, wait for tbd before trying again
-		std::this_thread::sleep_for(std::chrono::milliseconds(30)); // 30ms pump.cpp
+		// lower to 5 is resulting in longer app time till complete
+		std::this_thread::sleep_for(std::chrono::milliseconds(5)); // 30ms pump.cpp
 	}
 
 	// will never reach
