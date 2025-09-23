@@ -6,5 +6,5 @@ Configuration:
  - Time (sec): 30 
  
 Command: ..\x64\Debug\ReservationSystem.exe 10 2 30 
-Iterations: 1 
+Iterations: 5 
  

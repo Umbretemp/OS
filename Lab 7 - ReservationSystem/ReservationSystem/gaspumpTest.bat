@@ -54,16 +54,27 @@ set START_TIME=%TIME%
 
 for /L %%i in (1, 1, %ITERATIONS%) do (
     echo --- Iteration %%i --- >> %OUTPUT_FILE%
-    
+
+    REM -- Capture start time for this specific iteration --
+    set ITERATION_START_TIME=!TIME!
+
     REM This command runs the program and pipes a newline (Enter key)
     REM into its input stream to handle the "pause()" function at the end.
     REM It appends all output (stdout and stderr) to the log file.
-    (echo.) | %EXECUTABLE% %ARGS% >> %OUTPUT_FILE% 2>>&1    
+    (echo.) | %EXECUTABLE% %ARGS% >> %OUTPUT_FILE% 2>>&1
+
+    REM -- Capture end time and calculate duration for this iteration --
+    set ITERATION_END_TIME=!TIME!
+    echo Iteration Duration (min:sec:ms) >> %OUTPUT_FILE%
+    powershell -Command "$ts = New-TimeSpan -Start '!ITERATION_START_TIME!' -End '!
+    ITERATION_END_TIME!'; Write-Output ('{0:00}:{1:00}.{2:000}' -f $ts.Minutes, $ts.Seconds, 
+    $ts.Milliseconds)" >> %OUTPUT_FILE%
+      
     echo. >> %OUTPUT_FILE%
 )
 
 REM -- formating and calculation of time passed after program completed
-set END_TIME=%TIME%
+set TOTAL_END_TIME=%TIME%
 echo. >> %OUTPUT_FILE%
 echo --- TIMING RESULTS --- >> %OUTPUT_FILE%
 powershell -Command "$ts = New-TimeSpan -Start '%START_TIME%' -End '%END_TIME%'; Write-Output ('{0:00}:{1:00}.{2:000}' -f $ts.Minutes, $ts.Seconds, $ts.Milliseconds)" >> %OUTPUT_FILE%
