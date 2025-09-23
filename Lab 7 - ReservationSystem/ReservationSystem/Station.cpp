@@ -5,6 +5,7 @@
 
 #include "Station.h"
 #include "Pump.h"
+#include <thread>
 
 using namespace std;
 
@@ -49,23 +50,40 @@ int Station::fillUp()
 	//   variables UNLESS it's required by your algorithm for #5 above.
 	/////////////////////////////////////////////////////////////////////////////////////////////
 
-	for (int i = 0; i < pumpsInStation; i++)
+	while (true)
 	{
-		stationMutex->lock();
-		if ((freeMask & (1 << i)) == 0) // is pump free
+		for (int i = 0; i < pumpsInStation; i++)
 		{
-			freeMask |= (1 << i); // in use
-			stationMutex->unlock();
-
-			pumps[i].fillTankUp();
 			stationMutex->lock();
-			freeMask &= ~(1 << i); // free
+			if ((freeMask & (1 << i)) == 0) // is pump free
+			{
+				freeMask |= (1 << i); // in use
+				stationMutex->unlock();
+
+				pumps[i].fillTankUp();
+
+				stationMutex->lock();
+				freeMask &= ~(1 << i); // free
+				stationMutex->unlock();
+
+				// 5) number of cars, number of pumps, how long a single car takes to fill up
+				{
+					// -1 for this
+					int carsFilling = (((carsInStation-1) + (pumpsInStation - 1)) / pumpsInStation);
+					std::this_thread::sleep_for(std::chrono::milliseconds(carsFilling * 30)); // 30 ms pump.cpp
+				}
+				
+				return 1;
+			}
+			// milsec of not checking ??
 			stationMutex->unlock();
-			
 		}
 
+		// No pumps found, wait for tbd before trying again
+		std::this_thread::sleep_for(std::chrono::milliseconds(5));
 	}
 
+	// will never reach
 	return 0;
 }
 
