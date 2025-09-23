@@ -8,3 +8,32 @@ Configuration:
 Command: ..\x64\Debug\ReservationSystem.exe 10 2 30 
 Iterations: 1 
  
+--- Iteration 1 --- 
+Running Gas Station, using 10 cars, using 2 pumps
+Cars:
+  car # 0, Fill count 146, Try count 146
+  car # 1, Fill count 145, Try count 145
+  car # 2, Fill count 146, Try count 146
+  car # 3, Fill count 145, Try count 145
+  car # 4, Fill count 146, Try count 146
+  car # 5, Fill count 146, Try count 146
+  car # 6, Fill count 144, Try count 144
+  car # 7, Fill count 143, Try count 143
+  car # 8, Fill count 145, Try count 145
+  car # 9, Fill count 147, Try count 147
+Station:
+  Pump 0, Fill count 744
+  Pump 1, Fill count 709
+Press Enter to continue
+ 
+ 
+--- TIMING RESULTS --- 
+New-TimeSpan : Cannot bind parameter 'End'. Cannot convert value "" to type "System.DateTime". Error: "String was not 
+recognized as a valid DateTime."
+At line:1 char:46
++ $ts = New-TimeSpan -Start '16:06:56.15' -End ''; Write-Output ('{0:00 ...
++                                              ~~
+    + CategoryInfo          : InvalidArgument: (:) [New-TimeSpan], ParameterBindingException
+    + FullyQualifiedErrorId : CannotConvertArgumentNoMessage,Microsoft.PowerShell.Commands.NewTimeSpanCommand
+ 
+:.
