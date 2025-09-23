@@ -49,29 +49,37 @@ echo Command: %EXECUTABLE% %ARGS% >> %OUTPUT_FILE%
 echo Iterations: %ITERATIONS% >> %OUTPUT_FILE%
 echo. >> %OUTPUT_FILE%
 
-REM -- used to track variation of time between completion
-set START_TIME=%TIME%
+REM -- CAPTURE TOTAL START TIME --
+set TOTAL_START_TIME=%TIME%
 
 for /L %%i in (1, 1, %ITERATIONS%) do (
-    echo --- Iteration %%i --- >> %OUTPUT_FILE%
-
-    REM This command runs the program and pipes a newline (Enter key)
-    REM into its input stream to handle the "pause()" function at the end.
-    REM It appends all output (stdout and stderr) to the log file.
-    (echo.) | %EXECUTABLE% %ARGS% >> %OUTPUT_FILE% 2>>&1
-      
-    echo. >> %OUTPUT_FILE%
+    call :RunAndLogTime %%i
 )
 
-REM -- formating and calculation of time passed after program completed
+REM -- CAPTURE TOTAL END TIME AND CALCULATE DURATION --
 set TOTAL_END_TIME=%TIME%
 echo. >> %OUTPUT_FILE%
-echo --- TIMING RESULTS --- >> %OUTPUT_FILE%
-powershell -Command "$ts = New-TimeSpan -Start '%START_TIME%' -End '%END_TIME%'; Write-Output ('{0:00}:{1:00}.{2:000}' -f $ts.Minutes, $ts.Seconds, $ts.Milliseconds)" >> %OUTPUT_FILE%
+echo --- TOTAL TIMING RESULTS --- >> %OUTPUT_FILE%
+echo Total Execution Time (min:sec:ms) >> %OUTPUT_FILE%
+powershell -Command "$ts = New-TimeSpan -Start '%TOTAL_START_TIME%' -End '%TOTAL_END_TIME%'; Write-Output ('{0:00}:{1:00}.{2:000}' -f $ts.Minutes, $ts.Seconds, $ts.Milliseconds)" >> %OUTPUT_FILE%
 
 echo.
 echo Test complete.
 echo Output saved to %OUTPUT_FILE%
-pause
+goto :EOF
 
-:EOF
+REM -----------------------------------------------------------
+REM -- SUBROUTINE for running and timing a single iteration  --
+REM -----------------------------------------------------------
+:RunAndLogTime
+echo --- Iteration %1 --- >> %OUTPUT_FILE%
+
+set ITERATION_START_TIME=%TIME%
+(echo.) | %EXECUTABLE% %ARGS% >> %OUTPUT_FILE% 2>>&1
+set ITERATION_END_TIME=%TIME%
+
+echo Iteration Duration (min:sec:ms) >> %OUTPUT_FILE%
+powershell -Command "$ts = New-TimeSpan -Start '%ITERATION_START_TIME%' -End '%ITERATION_END_TIME%'; Write-Output ('{0:00}:{1:00}.{2:000}' -f $ts.Minutes, $ts.Seconds, $ts.Milliseconds)" >> %OUTPUT_FILE%
+
+echo. >> %OUTPUT_FILE%
+goto :EOF

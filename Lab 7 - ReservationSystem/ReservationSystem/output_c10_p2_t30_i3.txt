@@ -1,0 +1,74 @@
+Running Automated Gas Station Test... 
+ 
+Configuration: 
+ - Cars: 10 
+ - Pumps: 2 
+ - Time (sec): 30 
+ 
+Command: ..\x64\Debug\ReservationSystem.exe 10 2 30 
+Iterations: 3 
+ 
+--- Iteration 1 --- 
+Running Gas Station, using 10 cars, using 2 pumps
+Cars:
+  car # 0, Fill count 144, Try count 144
+  car # 1, Fill count 144, Try count 144
+  car # 2, Fill count 143, Try count 143
+  car # 3, Fill count 145, Try count 145
+  car # 4, Fill count 145, Try count 145
+  car # 5, Fill count 146, Try count 146
+  car # 6, Fill count 143, Try count 143
+  car # 7, Fill count 143, Try count 143
+  car # 8, Fill count 143, Try count 143
+  car # 9, Fill count 144, Try count 144
+Station:
+  Pump 0, Fill count 734
+  Pump 1, Fill count 706
+Press Enter to continue
+Iteration Duration (min:sec:ms) 
+00:30.230
+ 
+--- Iteration 2 --- 
+Running Gas Station, using 10 cars, using 2 pumps
+Cars:
+  car # 0, Fill count 148, Try count 148
+  car # 1, Fill count 148, Try count 148
+  car # 2, Fill count 149, Try count 149
+  car # 3, Fill count 148, Try count 148
+  car # 4, Fill count 148, Try count 148
+  car # 5, Fill count 149, Try count 149
+  car # 6, Fill count 149, Try count 149
+  car # 7, Fill count 148, Try count 148
+  car # 8, Fill count 149, Try count 149
+  car # 9, Fill count 148, Try count 148
+Station:
+  Pump 0, Fill count 759
+  Pump 1, Fill count 725
+Press Enter to continue
+Iteration Duration (min:sec:ms) 
+00:30.290
+ 
+--- Iteration 3 --- 
+Running Gas Station, using 10 cars, using 2 pumps
+Cars:
+  car # 0, Fill count 147, Try count 147
+  car # 1, Fill count 148, Try count 148
+  car # 2, Fill count 146, Try count 146
+  car # 3, Fill count 147, Try count 147
+  car # 4, Fill count 144, Try count 144
+  car # 5, Fill count 146, Try count 146
+  car # 6, Fill count 145, Try count 145
+  car # 7, Fill count 146, Try count 146
+  car # 8, Fill count 144, Try count 144
+  car # 9, Fill count 147, Try count 147
+Station:
+  Pump 0, Fill count 739
+  Pump 1, Fill count 721
+Press Enter to continue
+Iteration Duration (min:sec:ms) 
+00:30.280
+ 
+ 
+--- TOTAL TIMING RESULTS --- 
+Total Execution Time (min:sec:ms) 
+01:31.840
