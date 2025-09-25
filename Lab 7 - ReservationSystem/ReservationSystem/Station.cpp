@@ -52,10 +52,10 @@ int Station::fillUp()
 
 	while (true)
 	{
-		//stationMutex->lock(); // entire iteration
+		stationMutex->lock(); // entire iteration
 		for (int i = 0; i < pumpsInStation; i++)
 		{
-			stationMutex->lock(); // singular check very slow
+			//stationMutex->lock(); // singular check very slow
 			if ((freeMask & (1 << i)) == 0) // is pump free
 			{
 				freeMask |= (1 << i); // in use
@@ -78,13 +78,13 @@ int Station::fillUp()
 				return 1;
 			}
 			// milsec of not checking ?? durring incrementing
-			stationMutex->unlock(); // singular check very slow
+			//stationMutex->unlock(); // singular check very slow
 		}
-		//stationMutex->unlock(); // entire iteration
+		stationMutex->unlock(); // entire iteration
 
 		// No pumps found, wait for tbd before trying again
 		// lower to 5 is resulting in longer app time till complete
-		std::this_thread::sleep_for(std::chrono::milliseconds(5)); // 30ms pump.cpp
+		std::this_thread::sleep_for(std::chrono::milliseconds(30)); // 30ms pump.cpp
 	}
 
 	// will never reach
