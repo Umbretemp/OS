@@ -65,6 +65,7 @@ int Station::fillUp()
 
 				stationMutex->lock();
 				freeMask &= ~(1 << i); // free
+				stationCondition->notify_one(); // 4) notify cv for wait()
 				stationMutex->unlock();
 
 				// 5) number of cars, number of pumps, how long a single car takes to fill up
@@ -82,9 +83,18 @@ int Station::fillUp()
 		}
 		//stationMutex->unlock(); // entire iteration
 
-		// No pumps found, wait for tbd before trying again
-		// lower to 5 is resulting in longer app time till complete
-		std::this_thread::sleep_for(std::chrono::milliseconds(30)); // 30ms pump.cpp
+		//scope 4)
+		{
+			std::unique_lock<std::mutex> lock(*stationMutex);
+
+			stationCondition->wait(lock, [this] {
+				unsigned int pumpsBusyMask = (1 << this->pumpsInStation) - 1;
+				return this->freeMask != pumpsBusyMask; });
+
+			// No pumps found, wait for tbd before trying again
+			// lower to 5 is resulting in longer app time till complete
+			//std::this_thread::sleep_for(std::chrono::milliseconds(30)); // 30ms pump.cpp
+		}
 	}
 
 	// will never reach
