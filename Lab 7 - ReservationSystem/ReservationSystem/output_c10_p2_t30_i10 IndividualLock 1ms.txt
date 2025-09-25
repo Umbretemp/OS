@@ -1,0 +1,214 @@
+Running Automated Gas Station Test... 
+ 
+Configuration: 
+ - Cars: 10 
+ - Pumps: 2 
+ - Time (sec): 30 
+ 
+Command: ..\x64\Debug\ReservationSystem.exe 10 2 30 
+Iterations: 10 
+ 
+--- Iteration 1 --- 
+Running Gas Station, using 10 cars, using 2 pumps
+Cars:
+  car # 0, Fill count 144, Try count 144
+  car # 1, Fill count 145, Try count 145
+  car # 2, Fill count 146, Try count 146
+  car # 3, Fill count 145, Try count 145
+  car # 4, Fill count 146, Try count 146
+  car # 5, Fill count 144, Try count 144
+  car # 6, Fill count 144, Try count 144
+  car # 7, Fill count 146, Try count 146
+  car # 8, Fill count 145, Try count 145
+  car # 9, Fill count 147, Try count 147
+Station:
+  Pump 0, Fill count 734
+  Pump 1, Fill count 718
+Press Enter to continue
+Iteration Duration (min:sec:ms) 
+00:30.340
+ 
+--- Iteration 2 --- 
+Running Gas Station, using 10 cars, using 2 pumps
+Cars:
+  car # 0, Fill count 147, Try count 147
+  car # 1, Fill count 144, Try count 144
+  car # 2, Fill count 146, Try count 146
+  car # 3, Fill count 146, Try count 146
+  car # 4, Fill count 145, Try count 145
+  car # 5, Fill count 145, Try count 145
+  car # 6, Fill count 146, Try count 146
+  car # 7, Fill count 144, Try count 144
+  car # 8, Fill count 146, Try count 146
+  car # 9, Fill count 147, Try count 147
+Station:
+  Pump 0, Fill count 742
+  Pump 1, Fill count 714
+Press Enter to continue
+Iteration Duration (min:sec:ms) 
+00:30.350
+ 
+--- Iteration 3 --- 
+Running Gas Station, using 10 cars, using 2 pumps
+Cars:
+  car # 0, Fill count 147, Try count 147
+  car # 1, Fill count 148, Try count 148
+  car # 2, Fill count 146, Try count 146
+  car # 3, Fill count 147, Try count 147
+  car # 4, Fill count 148, Try count 148
+  car # 5, Fill count 146, Try count 146
+  car # 6, Fill count 147, Try count 147
+  car # 7, Fill count 147, Try count 147
+  car # 8, Fill count 147, Try count 147
+  car # 9, Fill count 149, Try count 149
+Station:
+  Pump 0, Fill count 744
+  Pump 1, Fill count 728
+Press Enter to continue
+Iteration Duration (min:sec:ms) 
+00:30.310
+ 
+--- Iteration 4 --- 
+Running Gas Station, using 10 cars, using 2 pumps
+Cars:
+  car # 0, Fill count 146, Try count 146
+  car # 1, Fill count 144, Try count 144
+  car # 2, Fill count 144, Try count 144
+  car # 3, Fill count 146, Try count 146
+  car # 4, Fill count 144, Try count 144
+  car # 5, Fill count 143, Try count 143
+  car # 6, Fill count 144, Try count 144
+  car # 7, Fill count 145, Try count 145
+  car # 8, Fill count 146, Try count 146
+  car # 9, Fill count 146, Try count 146
+Station:
+  Pump 0, Fill count 737
+  Pump 1, Fill count 711
+Press Enter to continue
+Iteration Duration (min:sec:ms) 
+00:30.370
+ 
+--- Iteration 5 --- 
+Running Gas Station, using 10 cars, using 2 pumps
+Cars:
+  car # 0, Fill count 147, Try count 147
+  car # 1, Fill count 146, Try count 146
+  car # 2, Fill count 145, Try count 145
+  car # 3, Fill count 147, Try count 147
+  car # 4, Fill count 147, Try count 147
+  car # 5, Fill count 147, Try count 147
+  car # 6, Fill count 147, Try count 147
+  car # 7, Fill count 146, Try count 146
+  car # 8, Fill count 146, Try count 146
+  car # 9, Fill count 146, Try count 146
+Station:
+  Pump 0, Fill count 742
+  Pump 1, Fill count 722
+Press Enter to continue
+Iteration Duration (min:sec:ms) 
+00:30.360
+ 
+--- Iteration 6 --- 
+Running Gas Station, using 10 cars, using 2 pumps
+Cars:
+  car # 0, Fill count 147, Try count 147
+  car # 1, Fill count 147, Try count 147
+  car # 2, Fill count 146, Try count 146
+  car # 3, Fill count 145, Try count 145
+  car # 4, Fill count 146, Try count 146
+  car # 5, Fill count 146, Try count 146
+  car # 6, Fill count 147, Try count 147
+  car # 7, Fill count 147, Try count 147
+  car # 8, Fill count 145, Try count 145
+  car # 9, Fill count 147, Try count 147
+Station:
+  Pump 0, Fill count 742
+  Pump 1, Fill count 721
+Press Enter to continue
+Iteration Duration (min:sec:ms) 
+00:30.390
+ 
+--- Iteration 7 --- 
+Running Gas Station, using 10 cars, using 2 pumps
+Cars:
+  car # 0, Fill count 145, Try count 145
+  car # 1, Fill count 145, Try count 145
+  car # 2, Fill count 147, Try count 147
+  car # 3, Fill count 146, Try count 146
+  car # 4, Fill count 146, Try count 146
+  car # 5, Fill count 147, Try count 147
+  car # 6, Fill count 147, Try count 147
+  car # 7, Fill count 147, Try count 147
+  car # 8, Fill count 145, Try count 145
+  car # 9, Fill count 145, Try count 145
+Station:
+  Pump 0, Fill count 745
+  Pump 1, Fill count 715
+Press Enter to continue
+Iteration Duration (min:sec:ms) 
+00:30.380
+ 
+--- Iteration 8 --- 
+Running Gas Station, using 10 cars, using 2 pumps
+Cars:
+  car # 0, Fill count 147, Try count 147
+  car # 1, Fill count 144, Try count 144
+  car # 2, Fill count 143, Try count 143
+  car # 3, Fill count 145, Try count 145
+  car # 4, Fill count 145, Try count 145
+  car # 5, Fill count 145, Try count 145
+  car # 6, Fill count 145, Try count 145
+  car # 7, Fill count 145, Try count 145
+  car # 8, Fill count 145, Try count 145
+  car # 9, Fill count 147, Try count 147
+Station:
+  Pump 0, Fill count 738
+  Pump 1, Fill count 713
+Press Enter to continue
+Iteration Duration (min:sec:ms) 
+00:30.390
+ 
+--- Iteration 9 --- 
+Running Gas Station, using 10 cars, using 2 pumps
+Cars:
+  car # 0, Fill count 147, Try count 147
+  car # 1, Fill count 146, Try count 146
+  car # 2, Fill count 146, Try count 146
+  car # 3, Fill count 145, Try count 145
+  car # 4, Fill count 147, Try count 147
+  car # 5, Fill count 146, Try count 146
+  car # 6, Fill count 146, Try count 146
+  car # 7, Fill count 146, Try count 146
+  car # 8, Fill count 146, Try count 146
+  car # 9, Fill count 146, Try count 146
+Station:
+  Pump 0, Fill count 741
+  Pump 1, Fill count 720
+Press Enter to continue
+Iteration Duration (min:sec:ms) 
+00:30.400
+ 
+--- Iteration 10 --- 
+Running Gas Station, using 10 cars, using 2 pumps
+Cars:
+  car # 0, Fill count 145, Try count 145
+  car # 1, Fill count 145, Try count 145
+  car # 2, Fill count 145, Try count 145
+  car # 3, Fill count 146, Try count 146
+  car # 4, Fill count 146, Try count 146
+  car # 5, Fill count 143, Try count 143
+  car # 6, Fill count 146, Try count 146
+  car # 7, Fill count 145, Try count 145
+  car # 8, Fill count 144, Try count 144
+  car # 9, Fill count 147, Try count 147
+Station:
+  Pump 0, Fill count 742
+  Pump 1, Fill count 710
+Press Enter to continue
+Iteration Duration (min:sec:ms) 
+00:30.350
+ 
+ 
+--- TOTAL TIMING RESULTS --- 
+Total Execution Time (min:sec:ms) 
+05:10.690

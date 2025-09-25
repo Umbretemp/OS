@@ -1,0 +1,114 @@
+Running Automated Gas Station Test... 
+ 
+Configuration: 
+ - Cars: 10 
+ - Pumps: 2 
+ - Time (sec): 30 
+ 
+Command: ..\x64\Debug\ReservationSystem.exe 10 2 30 
+Iterations: 5 
+ 
+--- Iteration 1 --- 
+Running Gas Station, using 10 cars, using 2 pumps
+Cars:
+  car # 0, Fill count 141, Try count 141
+  car # 1, Fill count 136, Try count 136
+  car # 2, Fill count 135, Try count 135
+  car # 3, Fill count 140, Try count 140
+  car # 4, Fill count 133, Try count 133
+  car # 5, Fill count 134, Try count 134
+  car # 6, Fill count 133, Try count 133
+  car # 7, Fill count 140, Try count 140
+  car # 8, Fill count 137, Try count 137
+  car # 9, Fill count 135, Try count 135
+Station:
+  Pump 0, Fill count 703
+  Pump 1, Fill count 661
+Press Enter to continue
+Iteration Duration (min:sec:ms) 
+00:30.300
+ 
+--- Iteration 2 --- 
+Running Gas Station, using 10 cars, using 2 pumps
+Cars:
+  car # 0, Fill count 143, Try count 143
+  car # 1, Fill count 138, Try count 138
+  car # 2, Fill count 138, Try count 138
+  car # 3, Fill count 140, Try count 140
+  car # 4, Fill count 136, Try count 136
+  car # 5, Fill count 139, Try count 139
+  car # 6, Fill count 137, Try count 137
+  car # 7, Fill count 138, Try count 138
+  car # 8, Fill count 137, Try count 137
+  car # 9, Fill count 136, Try count 136
+Station:
+  Pump 0, Fill count 724
+  Pump 1, Fill count 658
+Press Enter to continue
+Iteration Duration (min:sec:ms) 
+00:30.320
+ 
+--- Iteration 3 --- 
+Running Gas Station, using 10 cars, using 2 pumps
+Cars:
+  car # 0, Fill count 139, Try count 139
+  car # 1, Fill count 138, Try count 138
+  car # 2, Fill count 137, Try count 137
+  car # 3, Fill count 139, Try count 139
+  car # 4, Fill count 137, Try count 137
+  car # 5, Fill count 138, Try count 138
+  car # 6, Fill count 132, Try count 132
+  car # 7, Fill count 138, Try count 138
+  car # 8, Fill count 138, Try count 138
+  car # 9, Fill count 139, Try count 139
+Station:
+  Pump 0, Fill count 722
+  Pump 1, Fill count 653
+Press Enter to continue
+Iteration Duration (min:sec:ms) 
+00:30.290
+ 
+--- Iteration 4 --- 
+Running Gas Station, using 10 cars, using 2 pumps
+Cars:
+  car # 0, Fill count 145, Try count 145
+  car # 1, Fill count 138, Try count 138
+  car # 2, Fill count 136, Try count 136
+  car # 3, Fill count 139, Try count 139
+  car # 4, Fill count 136, Try count 136
+  car # 5, Fill count 140, Try count 140
+  car # 6, Fill count 135, Try count 135
+  car # 7, Fill count 139, Try count 139
+  car # 8, Fill count 137, Try count 137
+  car # 9, Fill count 136, Try count 136
+Station:
+  Pump 0, Fill count 709
+  Pump 1, Fill count 672
+Press Enter to continue
+Iteration Duration (min:sec:ms) 
+00:30.310
+ 
+--- Iteration 5 --- 
+Running Gas Station, using 10 cars, using 2 pumps
+Cars:
+  car # 0, Fill count 139, Try count 139
+  car # 1, Fill count 134, Try count 134
+  car # 2, Fill count 139, Try count 139
+  car # 3, Fill count 139, Try count 139
+  car # 4, Fill count 135, Try count 135
+  car # 5, Fill count 135, Try count 135
+  car # 6, Fill count 135, Try count 135
+  car # 7, Fill count 137, Try count 137
+  car # 8, Fill count 141, Try count 141
+  car # 9, Fill count 138, Try count 138
+Station:
+  Pump 0, Fill count 708
+  Pump 1, Fill count 664
+Press Enter to continue
+Iteration Duration (min:sec:ms) 
+00:30.300
+ 
+ 
+--- TOTAL TIMING RESULTS --- 
+Total Execution Time (min:sec:ms) 
+02:33.050
