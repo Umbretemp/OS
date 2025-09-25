@@ -52,10 +52,10 @@ int Station::fillUp()
 
 	while (true)
 	{
-		//stationMutex->lock(); // entire iteration
+		stationMutex->lock(); // entire iteration
 		for (int i = 0; i < pumpsInStation; i++)
 		{
-			stationMutex->lock(); // singular check very slow
+			//stationMutex->lock(); // singular check very slow
 			if ((freeMask & (1 << i)) == 0) // is pump free
 			{
 				freeMask |= (1 << i); // in use
@@ -79,9 +79,9 @@ int Station::fillUp()
 				return 1;
 			}
 			// milsec of not checking ?? durring incrementing
-			stationMutex->unlock(); // singular check very slow
+			//stationMutex->unlock(); // singular check very slow
 		}
-		//stationMutex->unlock(); // entire iteration
+		stationMutex->unlock(); // entire iteration
 
 		//scope 4)
 		{
